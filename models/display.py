@@ -17,8 +17,8 @@ def catalog1():
 def catalog2():
     return render_template('catalog2.html')  
 
-def details1():
-    return render_template('details1.html') 
+def F9():
+    return render_template('F9.html') 
 
 def details2():
     return render_template('details2.html')          

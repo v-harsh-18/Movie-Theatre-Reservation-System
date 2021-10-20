@@ -9,7 +9,7 @@ app=Flask(__name__)
 
 app.add_url_rule('/', view_func=display.index, methods=['GET'])
 app.add_url_rule('/index', view_func=display.index2, methods=['GET'])
-app.add_url_rule('/details1', view_func=display.details1, methods=['GET'])
+app.add_url_rule('/F9', view_func=display.F9, methods=['GET'])
 app.add_url_rule('/details2', view_func=display.details2, methods=['GET'])
 app.add_url_rule('/catalog1', view_func=display.catalog1, methods=['GET'])
 app.add_url_rule('/catalog2', view_func=display.catalog2, methods=['GET'])
