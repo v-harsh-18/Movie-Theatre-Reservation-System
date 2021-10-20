@@ -2,7 +2,7 @@ from flask import Flask,render_template,request,session,redirect,flash
 import math
 from textblob import TextBlob
 from flask_mysqldb import MySQL
-
+#hello
 import models.display as display
 
 app=Flask(__name__)
