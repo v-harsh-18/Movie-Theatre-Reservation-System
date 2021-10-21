@@ -1,9 +1,9 @@
 /*----------------------------------------
 [Master Stylesheet]
 
-Project:	FlixGo
+Project:	CineShow
 Version:	1.0
-Primary use:	FlixGo Template
+Primary use:	CineShow Template
 ----------------------------------------*/
 /*----------------------------------------
 [Table of contents]
@@ -3710,4 +3710,232 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background-image: -webkit-linear-gradient(180deg, #ff55a5 0%, #ff5860 100%);
   background-image: -ms-linear-gradient(180deg, #ff55a5 0%, #ff5860 100%);
   background-image: linear-gradient(180deg, #ff55a5 0%, #ff5860 100%);
+}
+
+
+/* Booking Page */
+
+/* Booking Header */
+.booking-container {
+  background: linear-gradient(90deg, #2b2b31, #2b2b31 50%, #2b2b31 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1rem;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.booking-header div {
+  display: flex;
+  align-items: center;
+}
+
+.booking-header__img {
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.booking-header__title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.booking-header__total {
+  color: white;
+  padding: 1rem;
+  border: 1px solid #ff55a5;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+/* Screen */
+.screen {
+  width: 100%; 
+  height: 8rem;  
+  border: 7px solid white;
+  border-color: white transparent transparent transparent;
+  border-radius: 45%/100px 100px 0px 0px;
+  margin: 0 auto;
+}
+.name {
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  
+}
+/* Booking Legend */
+.booking-legend {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin-top: -2rem;
+}
+
+.legend-key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seat {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: .5rem;
+  border-radius: .3rem;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.seat-booked {
+  background-color: #b9b9d3;
+}
+
+.seat-selected {
+  background-color: #ff55a5;
+}
+
+.seat-available {
+  background-color: none;
+  border: 1px solid #ff55a5;
+}
+
+.legend-key h2 {
+  color: white;
+  font-size: 1.25rem;
+  margin-top: .5rem;
+}
+
+/* Seating */
+.seating {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.seat:hover:not(.seat-booked) {
+  transform: scale(1.4);
+  transition: .3s ease;
+}
+
+.seat:nth-of-type(3) {
+  margin-right: 3rem;
+}
+
+.seat:nth-last-of-type(3) {
+  margin-left: 3rem;
+}
+
+
+.row:nth-of-type(5) {
+  margin-bottom: 2rem;
+}
+
+.row:nth-last-of-type(3) {
+  margin-top: 2rem;
+}
+
+.payment-btn {
+  display: block;
+  width: 35%;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  background-color: #ff55a5;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+
+/* Confirmation Page */
+.confirmation {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.confirmation > * {
+  margin-bottom: 1.3rem;
+}
+
+.confirmation__img {
+  margin-bottom: 3.5rem;
+}
+
+.confirmation__heading {
+  font-size: 2.5rem;
+}
+
+.confirmation__subheading {
+  font-size: 1.5rem;
+}
+
+.redirect-btn {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  background-color: #615eb9;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem;
+  background-color: #615eb9;
+  text-align: center;
+  color: white;
+  border-radius: 2rem 2rem 0 0;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media (min-width: 760px) {
+  .movies-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .movie-container {
+      margin: 2rem;
+  }
+  
+  .seat {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+
+  .payment-btn {
+      width: 30%;
+  }
+
+  .redirect-btn {
+      width: 50%;
+  }
 }
