@@ -3729,6 +3729,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   align-items: center;
   padding: 1.5rem;
   margin-bottom: 2rem;
+  font-size: small;
 }
 
 .booking-header div {
@@ -3747,7 +3748,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .booking-header__title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .booking-header__total {
@@ -3776,9 +3777,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 /* Booking Legend */
 .booking-legend {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: -2rem;
 }
 
@@ -3789,8 +3790,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .seat {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.4rem;
+  height: 1.4rem;
   margin: .5rem;
   border-radius: .3rem;
   cursor: pointer;
@@ -3812,7 +3813,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .legend-key h2 {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   margin-top: .5rem;
 }
 
@@ -3825,6 +3826,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .row {
   display: flex;
   justify-content: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .seat:hover:not(.seat-booked) {

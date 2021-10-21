@@ -1,4 +1,4 @@
-const headerImg = document.querySelector('.booking-header__img');
+//const headerImg = document.querySelector('.booking-header__img');
 const headerTitle = document.querySelector('.booking-header__title');
 const seatsContainer = document.querySelector('.seating');
 const seats = document.querySelectorAll('.row .seat');
