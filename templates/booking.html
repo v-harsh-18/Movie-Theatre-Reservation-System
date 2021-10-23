@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=yes">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>CineShow | Book Seats</title>
 </head>
 <body>
     <div class="booking-container">
         <header class="booking-header">
             <div>
-                <img src="./img/covers/ff9.jpg" alt="movie-poster" class="booking-header__img" >
+                <img src="{{ url_for('static', filename='./img/covers/ff9.jpg') }}" alt="movie-poster" class="booking-header__img" >
                 <h2 class="booking-header__title">Fast and Furious 9</h2>
             </div>
             <h3 class="booking-header__total">0 Tickets</h3>
@@ -175,10 +175,10 @@
         <a href="#" class="payment-btn">Pay ₹ 0.00</a> 
        
        
-        <a href="./index.html" class="back-btn">Back to homepage</a>
+        <a href="{{ url_for('static', filename='./index.html') }}" class="back-btn">Back to homepage</a>
        
         <br><br>
     </div>
-    <script src="js/booking.js"></script>
+    <script src="{{ url_for('static', filename='js/booking.js') }}"></script>
 </body>
 </html>

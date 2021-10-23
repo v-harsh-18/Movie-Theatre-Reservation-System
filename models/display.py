@@ -30,4 +30,7 @@ def faq():
     return render_template('faq.html')     
 
 def about():
-    return render_template('about.html')         
+    return render_template('about.html')     
+
+def booking():
+    return render_template('booking.html')         
