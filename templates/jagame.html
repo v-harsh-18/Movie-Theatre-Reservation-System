@@ -9,19 +9,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" href="css/nouislider.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/plyr.css">
-	<link rel="stylesheet" href="css/photoswipe.css">
-	<link rel="stylesheet" href="css/default-skin.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
 	<!-- Favicons -->
-	<link rel="icon"  href="icon/favi.png">
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -40,7 +40,7 @@
 						<div class="header__content">
 							<!-- header logo -->
 							<a href="index.html" class="header__logo">
-								<img src="img/CineShow.png" alt="">
+								<img src="{{ url_for('static', filename='img/CineShow.png') }}" alt="">
 							</a>
 							<!-- end header logo -->
 
@@ -50,13 +50,12 @@
 									<a href="index.html" class="header__nav-link">Home</a>
 								</li>
 
-								<!-- dropdown -->
 								<li class="header__nav-item">
 									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
 
 									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-										<li><a href="catalog1.html">Catalog Grid</a></li>
-										<li><a href="catalog2.html">Catalog List</a></li>
+										<li><a href="/catalog1">Catalog Grid</a></li>
+										<li><a href="/catalog2">Catalog List</a></li>
 										<li><a href="F9.html">Details Movie</a></li>
 										<li><a href="details2.html">Details TV Series</a></li>
 									</ul>
@@ -64,26 +63,24 @@
 								<!-- end dropdown -->
 
 								<li class="header__nav-item">
-									<a href="pricing.html" class="header__nav-link">Pricing Plan</a>
+									<a href="/pricing" class="header__nav-link">Pricing Plan</a>
 								</li>
 
 								<li class="header__nav-item">
-									<a href="faq.html" class="header__nav-link">Help</a>
+									<a href="/faq" class="header__nav-link">Help</a>
 								</li>
 
 								<li class="header__nav-item">
-									<a href="about.html" class="header__nav-link">About</a>
+									<a href="/about" class="header__nav-link">About</a>
 								</li>
 							</ul>
 							<!-- end header nav -->
 
 							<!-- header auth -->
 							<div class="header__auth">
-								<button class="header__search-btn" type="button">
-									<i class="icon ion-ios-search"></i>
-								</button>
+							
 
-								<a href="signin.html" class="header__sign-in">
+								<a href="/login" class="header__sign-in">
 									<i class="icon ion-ios-log-in"></i>
 									<span>sign in</span>
 								</a>
@@ -124,7 +121,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="img/home/Dhanushdbg.webp"></div>
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/Dhanushdbg.webp') }}"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -143,7 +140,7 @@
 							<!-- card cover -->
 							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
 								<div class="card__cover">
-									<img src="img/covers/Jagame_Thandhiram.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Jagame_Thandhiram.jpg') }}" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
@@ -296,7 +293,7 @@
 										<ul class="comments__list">
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Harsh Verma.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Harsh Verma.jpg') }}" alt="">
 													<span class="comments__name">Harsh Verma</span>
 													<span class="comments__time">02.08.2018, 15:24</span>
 												</div>
@@ -316,7 +313,7 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Pranjali.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Pranjali.jpg') }}" alt="">
 													<span class="comments__name">Pranjali Ghavale</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
@@ -335,7 +332,7 @@
 
 											<li class="comments__item comments__item--answer">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Chaitanya.jpeg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Chaitanya.jpeg') }}" alt="">
 													<span class="comments__name">Chaitanya Dhanorkar</span>
 													<span class="comments__time">24.08.2018, 16:41</span>
 												</div>
@@ -354,7 +351,7 @@
 
 											<li class="comments__item comments__item--quote">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Aditya.jpeg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Aditya.jpeg') }}" alt="">
 													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">11.08.2018, 11:11</span>
 												</div>
@@ -373,7 +370,7 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Gaurav.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Gaurav.jpg') }}" alt="">
 													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
@@ -410,7 +407,7 @@
 										<ul class="reviews__list">
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/instadp__maniratnnparakh01_full_size.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
                                                     <span class="reviews__name">Okay Movie</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
@@ -424,7 +421,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG_20210622_194530_220.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
                                                     <span class="reviews__name">Handeled Well</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
@@ -435,7 +432,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG_20210705_181439__01 (1).jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210705_181439__01 (1).jpg') }}" alt="">
 													<span class="reviews__name">What were they trying to make???</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Sujal Patel</span>
 
@@ -446,7 +443,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG-20200817-WA0006.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG-20200817-WA0006.jpg') }}" alt="">
 													<span class="reviews__name">🔥🔥🔥🔥🔥</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Ujjwal Hendwe</span>
 
@@ -477,57 +474,40 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame1.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame1.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame1.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame2.webp" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame2.webp" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame2.webp') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame2.webp') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame3.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame3.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame3.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame4.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame4.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame4.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame5.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame5.jpg" itemprop="thumbnail" alt="Image description" />
-										</a>
-										n 5</figcaption>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame6.jpeg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame6.jpeg" itemprop="thumbnail" alt="Image description" />
-										</a>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame7.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame7.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame5.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -535,8 +515,16 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame8.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame8.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame6.jpeg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame6.jpeg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Jagame7.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame7.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -544,8 +532,17 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Jagame9.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Jagame9.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Jagame8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Jagame9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Jagame9.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -571,7 +568,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/Chehre.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
 									<a href="Chehre.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -593,7 +590,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/ff9.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
 									<a href="F9.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -615,7 +612,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/mimi.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
 									<a href="mimi.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -636,7 +633,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
 									<a href="Thailavi.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -657,7 +654,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/sooraraipottru.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -677,7 +674,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/Bell bottom.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Bell bottom.jpg') }}" alt="">
 									<a href="Bell.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -709,8 +706,8 @@
 				<div class="col-12 col-md-3">
 					<h6 class="footer__title">Download Our App</h6>
 					<ul class="footer__app">
-						<li><a href="#"><img src="img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
-						<li><a href="#"><img src="img/google-play-badge.png" alt=""></a></li>
+						<li><a href="#"><img src="{{ url_for('static', filename='img/Download_on_the_App_Store_Badge.svg') }}" alt=""></a></li>
+						<li><a href="#"><img src="{{ url_for('static', filename='img/google-play-badge.png') }}" alt=""></a></li>
 					</ul>
 				</div>
 				<!-- end footer list -->
@@ -741,8 +738,8 @@
 				<div class="col-12 col-sm-4 col-md-3">
 					<h6 class="footer__title">Contact</h6>
 					<ul class="footer__list">
-						<li><a href="tel:+18002345678">+91 7796108178</a></li>
-						<li><a href="mailto:support@moviego.com">support@CineShow.com</a></li>
+						<li><a href="tel:+919011675787">+91 9011675787</a></li>
+						<li><a href="mailto:cse200001028@iiti.ac.in">support@CineShow.com</a></li>
 					</ul>
 					<ul class="footer__social">
 						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
@@ -753,18 +750,6 @@
 				</div>
 				<!-- end footer list -->
 
-				<!-- footer copyright -->
-				<div class="col-12">
-					<div class="footer__copyright">
-						<small><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></small>
-
-						<ul>
-							<li><a href="#">Terms of Use</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- end footer copyright -->
 			</div>
 		</div>
 	</footer>
@@ -823,18 +808,18 @@
 	</div>
 
 	<!-- JS -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.mousewheel.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.min.js"></script>
-	<script src="js/wNumb.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/plyr.min.js"></script>
-	<script src="js/jquery.morelines.min.js"></script>
-	<script src="js/photoswipe.min.js"></script>
-	<script src="js/photoswipe-ui-default.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mousewheel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/plyr.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.morelines.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe-ui-default.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>
