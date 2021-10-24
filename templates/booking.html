@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -38,6 +38,21 @@
             </div>
         </section>
         <section class="seating">
+            <div class="row">
+            {% for i in range(1,11) %}
+            {% set b='A' %}
+            {% set a=i | string() %}
+            {% set b=b+a %}
+
+            {% for seat in seats %}
+            {% if seat== b%}
+
+            {}
+            {% endfor %}
+            
+            <div class="seat seat-available" id="{{b}}"></div>
+            {% endfor %}
+        </div>
             <div class="row">
                 <div class="seat seat-booked"></div>
                 <div class="seat seat-available"></div>
