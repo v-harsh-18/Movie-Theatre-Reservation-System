@@ -46,6 +46,7 @@ const updateTotal = () => {
 
 // Toggle seat selection
 seatsContainer.addEventListener('click', (e) => {
+
     if (e.target.classList.contains('seat') && !e.target.classList.contains('seat-booked')) {
         e.target.classList.toggle('seat-selected');
         updateTotal();
@@ -53,15 +54,15 @@ seatsContainer.addEventListener('click', (e) => {
 });
 
 // Redirect to confirmation page after seat selection
-paymentTotalBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const selectedSeats = document.querySelectorAll('.row .seat-selected');
-    if (selectedSeats.length > 0) {
-        window.location = 'confirmation.html';
-    } else {
-        alert('Please make a seat selection.');
-    };
-});
+// paymentTotalBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const selectedSeats = document.querySelectorAll('.row .seat-selected');
+//     if (selectedSeats.length > 0) {
+//         console.log('hello')
+//     } else {
+//         alert('Please make a seat selection.');
+//     };
+// });
 
 // Load seats from local storage (if any)
 loadSeats();

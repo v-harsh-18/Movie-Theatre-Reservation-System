@@ -98,3 +98,6 @@ def soorarai():
 
 def thailavi():
     return render_template('thailavi.html')           
+
+def confirmation():
+    return render_template('confirmation.html')

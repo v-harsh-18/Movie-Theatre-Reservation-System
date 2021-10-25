@@ -3,5 +3,7 @@ import math
 from textblob import TextBlob
 
 
-def booking():
-    return render_template('index.html')
+def booki():
+    if request.method=='POST':
+     print(request.form.getlist('book'))
+     return redirect('/confirmation')
