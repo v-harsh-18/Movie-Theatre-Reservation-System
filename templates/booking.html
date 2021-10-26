@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -37,145 +37,41 @@
                 <h2>Available</h2>
             </div>
         </section>
+        <form method="POST" action="/book">
         <section class="seating">
+            {% for j in range(1,13) %}
             <div class="row">
-                <div class="seat seat-booked"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-booked"></div>
-                <div class="seat seat-available"></div>
+            {% for i in range(1,11) %}
+            {% set b='0ABCDEFGHIJKLMNOPQRSTUVWXYZ'[j] %}
+            {% set a=i | string() %}
+            {% set b=b+a %}
+            {% set check={'foo':True} %}
+
+            {% for seat in seats %}
+            {% if seat==b %}
+            <div class="seat seat-booked {{b}}" >
             </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
+            {% if check.update({'foo': False}) %} {% endif %}
+            {% endif %}
+            {% endfor %}
+            
+            {% if check.foo %}
+            <div class="seat seat-available {{b}}" >
+                <input type="text" name="book" id="{{b}}" style="display: none" >
             </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-booked"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-booked"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-booked"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-booked"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-            <div class="row">
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-                <div class="seat seat-available"></div>
-            </div>
-        </section>
-        
-        <a href="#" class="payment-btn">Pay ₹ 0.00</a> 
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </section>
+    
+    <button type ="submit" class="payment-btn">Pay ₹ 0.00</button>
        
        
-        <a href="{{ url_for('static', filename='./index.html') }}" class="back-btn">Back to homepage</a>
+</form>
+       
+       
+        <!-- <a href="{{ url_for('static', filename='./index.html') }}" class="back-btn">Back to homepage</a> -->
        
         <br><br>
     </div>

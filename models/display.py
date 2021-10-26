@@ -30,7 +30,8 @@ def about():
     return render_template('about.html')     
 
 def booking():
-    return render_template('booking.html')    
+    seats={'A1','A9'}
+    return render_template('booking.html',seats=seats)    
 
 def bell():
     return render_template('bell.html')  
@@ -97,3 +98,6 @@ def soorarai():
 
 def thailavi():
     return render_template('thailavi.html')           
+
+def confirmation():
+    return render_template('confirmation.html')

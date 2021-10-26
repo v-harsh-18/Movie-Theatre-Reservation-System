@@ -10,6 +10,7 @@ import requests
 import pathlib
 from werkzeug.utils import secure_filename, send_file
 import models.display as display
+import models.booking as bookin
 
 app=Flask(__name__)
 app.secret_key = 'secret'
@@ -118,5 +119,8 @@ app.add_url_rule('/shershah', view_func=display.shershah, methods=['GET'])
 app.add_url_rule('/shiddat', view_func=display.shiddat, methods=['GET'])
 app.add_url_rule('/soorarai', view_func=display.soorarai, methods=['GET'])
 app.add_url_rule('/thailavi', view_func=display.thailavi, methods=['GET'])
+app.add_url_rule('/confirmation', view_func=display.confirmation, methods=['GET'])
  
+app.add_url_rule('/book', view_func=bookin.booki, methods=['POST'])
+
 app.run(debug=True)
