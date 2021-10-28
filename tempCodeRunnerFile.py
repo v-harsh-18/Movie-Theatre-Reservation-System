@@ -20,9 +20,3 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '5792'
 app.config['MYSQL_DB'] = 'faculty_assignment'
 app.config['UPLOAD_FOLDER'] = 'static/files'
-
-
-def booki():
-    if request.method=='POST':
-     print(request.form.getlist('book'))
-     return redirect('/confirmation')

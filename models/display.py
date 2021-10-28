@@ -1,6 +1,24 @@
-from flask import Flask,render_template,request,session,redirect,flash
-import math
-from textblob import TextBlob
+from flask import *
+from flask.sessions import SessionMixin
+from flask_mysqldb import MySQL
+from google.oauth2 import id_token
+from google_auth_oauthlib.flow import Flow
+from pip._vendor import cachecontrol
+import google.auth.transport.requests
+import os
+import requests
+import pathlib
+from werkzeug.utils import secure_filename, send_file
+import models.display as display
+import models.booking as bookin
+
+app=Flask(__name__)
+app.secret_key = 'secret'
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = '5792'
+app.config['MYSQL_DB'] = 'reservation'
 
 def index():
     return render_template('index.html')
@@ -43,7 +61,7 @@ def chehre():
     return render_template('chehre.html')  
 
 def coolie():
-    return render_template('coolie.html')
+    return render_template('collie.html')
 
 def f9():
     return render_template('f9.html')  
