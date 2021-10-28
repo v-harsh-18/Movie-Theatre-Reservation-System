@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -50,19 +50,6 @@
 									<a href="index.html" class="header__nav-link">Home</a>
 								</li>
 
-								<!-- dropdown -->
-								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
-
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-										<li><a href="catalog1.html">Catalog Grid</a></li>
-										<li><a href="catalog2.html">Catalog List</a></li>
-										<li><a href="F9.html">Details Movie</a></li>
-										<li><a href="details2.html">Details TV Series</a></li>
-									</ul>
-								</li>
-								<!-- end dropdown -->
-
 								<li class="header__nav-item">
 									<a href="pricing.html" class="header__nav-link">Pricing Plan</a>
 								</li>
@@ -79,7 +66,9 @@
 
 							<!-- header auth -->
 							<div class="header__auth">
-							
+								<button class="header__search-btn" type="button">
+									<i class="icon ion-ios-search"></i>
+								</button>
 
 								<a href="signin.html" class="header__sign-in">
 									<i class="icon ion-ios-log-in"></i>
@@ -122,7 +111,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="img/home/home__bg.jpg"></div>
+		<div class="details__bg" data-bg="img/home/Reminiscencehdbg.jpg"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -130,27 +119,27 @@
 			<div class="row">
 				<!-- title -->
 				<div class="col-12">
-					<h1 class="details__title">I Dream in Another Language</h1>
+					<h1 class="details__title">Reminiscence</h1>
 				</div>
 				<!-- end title -->
 
 				<!-- content -->
-				<div class="col-10">
-					<div class="card card--details card--series">
+				<div class="col-12 col-xl-6">
+					<div class="card card--details">
 						<div class="row">
 							<!-- card cover -->
-							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="img/covers/Reminiscence.jpg" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
 
 							<!-- card content -->
-							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-7">
 								<div class="card__content">
 									<div class="card__wrap">
-										<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+										<span class="card__rate"><i class="icon ion-ios-star"></i>5.9</span>
 
 										<ul class="card__list">
 											<li>HD</li>
@@ -159,15 +148,13 @@
 									</div>
 
 									<ul class="card__meta">
-										<li><span>Genre:</span> <a href="#">Action</a>
-										<a href="#">Triler</a></li>
-										<li><span>Release year:</span> 2017</li>
-										<li><span>Running time:</span> 120 min</li>
-										<li><span>Country:</span> <a href="#">USA</a> </li>
+										<li><span>Genre:</span> <a href="#">Romance</a><a href="#">Mystery</a><a href="#">Sci-fi</a></li>
+										<li><span>Running time:</span> 116 min</li>
+										<li><span>Country:</span> <a href="#">India</a> </li>
 									</ul>
 
 									<div class="card__description card__description--details">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+										Nick Bannister, a private investigator of the mind, navigates the darkly alluring world of the past by helping his clients access lost memories. Living on the fringes of the sunken Miami coast, his life is forever changed as he uncovers a violent conspiracy while trying to solve the mystery behind a client who disappeared.
 									</div>
 								</div>
 							</div>
@@ -197,236 +184,6 @@
 				</div>
 				<!-- end player -->
 
-				<!-- accordion -->
-				<div class="col-12 col-xl-6">
-					<div class="accordion" id="accordion">
-						<div class="accordion__card">
-							<div class="card-header" id="headingOne">
-								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									<span>Season: 1</span>
-									<span>22 Episodes from Nov, 2004 until May, 2005</span>
-								</button>
-							</div>
-
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-								<div class="card-body">
-									<table class="accordion__list">
-										<thead>
-											<tr>
-												<th>#</th>
-												<th>Title</th>
-												<th>Air Date</th>
-											</tr>
-										</thead>
-
-										<tbody>
-											<tr>
-												<th>1</th>
-												<td>Pilot</td>
-												<td>Tuesday, November 16th, 2004</td>
-											</tr>
-											<tr>
-												<th>2</th>
-												<td>Paternity</td>
-												<td>Tuesday, November 23rd, 2004</td>
-											</tr>
-											<tr>
-												<th>3</th>
-												<td>Occam's Razor</td>
-												<td>Tuesday, November 30th, 2004</td>
-											</tr>
-											<tr>
-												<th>4</th>
-												<td>Maternity</td>
-												<td>Tuesday, December 7th, 2004</td>
-											</tr>
-											<tr>
-												<th>5</th>
-												<td>Damned If You Do</td>
-												<td>Tuesday, December 14th, 2004</td>
-											</tr>
-											<tr>
-												<th>6</th>
-												<td>The Socratic Method</td>
-												<td>Tuesday, December 21st, 2004</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion__card">
-							<div class="card-header" id="headingTwo">
-								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									<span>Season: 2</span>
-									<span>24 Episodes from Sep, 2005 until May, 2006</span>
-								</button>
-							</div>
-
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-								<div class="card-body">
-									<table class="accordion__list">
-										<thead>
-											<tr>
-												<th>#</th>
-												<th>Title</th>
-												<th>Air Date</th>
-											</tr>
-										</thead>
-
-										<tbody>
-											<tr>
-												<th>1</th>
-												<td>Pilot</td>
-												<td>Tuesday, November 16th, 2004</td>
-											</tr>
-											<tr>
-												<th>2</th>
-												<td>Paternity</td>
-												<td>Tuesday, November 23rd, 2004</td>
-											</tr>
-											<tr>
-												<th>3</th>
-												<td>Occam's Razor</td>
-												<td>Tuesday, November 30th, 2004</td>
-											</tr>
-											<tr>
-												<th>4</th>
-												<td>Maternity</td>
-												<td>Tuesday, December 7th, 2004</td>
-											</tr>
-											<tr>
-												<th>5</th>
-												<td>Damned If You Do</td>
-												<td>Tuesday, December 14th, 2004</td>
-											</tr>
-											<tr>
-												<th>6</th>
-												<td>The Socratic Method</td>
-												<td>Tuesday, December 21st, 2004</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion__card">
-							<div class="card-header" id="headingThree">
-								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									<span>Season: 3</span>
-									<span>24 Episodes from Sep, 2006 until May, 2007</span>
-								</button>
-							</div>
-
-							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-								<div class="card-body">
-									<table class="accordion__list">
-										<thead>
-											<tr>
-												<th>#</th>
-												<th>Title</th>
-												<th>Air Date</th>
-											</tr>
-										</thead>
-
-										<tbody>
-											<tr>
-												<th>1</th>
-												<td>Pilot</td>
-												<td>Tuesday, November 16th, 2004</td>
-											</tr>
-											<tr>
-												<th>2</th>
-												<td>Paternity</td>
-												<td>Tuesday, November 23rd, 2004</td>
-											</tr>
-											<tr>
-												<th>3</th>
-												<td>Occam's Razor</td>
-												<td>Tuesday, November 30th, 2004</td>
-											</tr>
-											<tr>
-												<th>4</th>
-												<td>Maternity</td>
-												<td>Tuesday, December 7th, 2004</td>
-											</tr>
-											<tr>
-												<th>5</th>
-												<td>Damned If You Do</td>
-												<td>Tuesday, December 14th, 2004</td>
-											</tr>
-											<tr>
-												<th>6</th>
-												<td>The Socratic Method</td>
-												<td>Tuesday, December 21st, 2004</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion__card">
-							<div class="card-header" id="headingFour">
-								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									<span>Season: 4</span>
-									<span>16 Episodes from Sep, 2007 until May, 2008</span>
-								</button>
-							</div>
-
-							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-								<div class="card-body">
-									<table class="accordion__list">
-										<thead>
-											<tr>
-												<th>#</th>
-												<th>Title</th>
-												<th>Air Date</th>
-											</tr>
-										</thead>
-
-										<tbody>
-											<tr>
-												<th>1</th>
-												<td>Pilot</td>
-												<td>Tuesday, November 16th, 2004</td>
-											</tr>
-											<tr>
-												<th>2</th>
-												<td>Paternity</td>
-												<td>Tuesday, November 23rd, 2004</td>
-											</tr>
-											<tr>
-												<th>3</th>
-												<td>Occam's Razor</td>
-												<td>Tuesday, November 30th, 2004</td>
-											</tr>
-											<tr>
-												<th>4</th>
-												<td>Maternity</td>
-												<td>Tuesday, December 7th, 2004</td>
-											</tr>
-											<tr>
-												<th>5</th>
-												<td>Damned If You Do</td>
-												<td>Tuesday, December 14th, 2004</td>
-											</tr>
-											<tr>
-												<th>6</th>
-												<td>The Socratic Method</td>
-												<td>Tuesday, December 21st, 2004</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end accordion -->
-
 				<div class="col-12">
 					<div class="details__wrap">
 						<!-- availables -->
@@ -440,6 +197,12 @@
 							</ul>
 						</div>
 						<!-- end availables -->
+
+						<!--Ticket-->
+						<div>
+							<a href="./booking.html" class="buy-tkt">Buy tickets</a>
+					    </div>
+						<!--end Ticket-->
 
 						<!-- share -->
 						<div class="details__share">
@@ -523,11 +286,30 @@
 										<ul class="comments__list">
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/user.png" alt="">
-													<span class="comments__name">John Doe</span>
+													<img class="comments__avatar" src="img/Harsh Verma.jpg" alt="">
+													<span class="comments__name">Harsh Verma</span>
+													<span class="comments__time">02.08.2018, 15:24</span>
+												</div>
+												<p class="comments__text">Let's be honest we have the technology... We can edit every scene where he makes a fist and have claws come out. Throw in a little blood effects when he's fighting and boom he's back.</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
+
+														<button type="button">13<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+													
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="img/Aditya.jpeg" alt="">
+													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
-												<p class="comments__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+												<p class="comments__text">Man every role he does is just epic</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>12</button>
@@ -540,51 +322,13 @@
 												</div>
 											</li>
 
-											<li class="comments__item comments__item--answer">
-												<div class="comments__autor">
-													<img class="comments__avatar" src="img/user.png" alt="">
-													<span class="comments__name">John Doe</span>
-													<span class="comments__time">24.08.2018, 16:41</span>
-												</div>
-												<p class="comments__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-												<div class="comments__actions">
-													<div class="comments__rate">
-														<button type="button"><i class="icon ion-md-thumbs-up"></i>8</button>
-
-														<button type="button">3<i class="icon ion-md-thumbs-down"></i></button>
-													</div>
-
-													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
-													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
-												</div>
-											</li>
-
-											<li class="comments__item comments__item--quote">
-												<div class="comments__autor">
-													<img class="comments__avatar" src="img/user.png" alt="">
-													<span class="comments__name">John Doe</span>
-													<span class="comments__time">11.08.2018, 11:11</span>
-												</div>
-												<p class="comments__text"><span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</span>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-												<div class="comments__actions">
-													<div class="comments__rate">
-														<button type="button"><i class="icon ion-md-thumbs-up"></i>11</button>
-
-														<button type="button">1<i class="icon ion-md-thumbs-down"></i></button>
-													</div>
-
-													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
-													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
-												</div>
-											</li>
-
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/user.png" alt="">
-													<span class="comments__name">John Doe</span>
+													<img class="comments__avatar" src="img/Gaurav.jpg" alt="">
+													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
-												<p class="comments__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+												<p class="comments__text">The music in this trailer is absolutely beautiful</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>99</button>
@@ -597,24 +341,6 @@
 												</div>
 											</li>
 
-											<li class="comments__item">
-												<div class="comments__autor">
-													<img class="comments__avatar" src="img/user.png" alt="">
-													<span class="comments__name">John Doe</span>
-													<span class="comments__time">02.08.2018, 15:24</span>
-												</div>
-												<p class="comments__text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-												<div class="comments__actions">
-													<div class="comments__rate">
-														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
-
-														<button type="button">13<i class="icon ion-md-thumbs-down"></i></button>
-													</div>
-													
-													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
-													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
-												</div>
-											</li>
 										</ul>
 
 										<form action="#" class="form">
@@ -635,35 +361,32 @@
 										<ul class="reviews__list">
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/user.png" alt="">
-													<span class="reviews__name">Best Marvel movie in my opinion</span>
-													<span class="reviews__time">24.08.2018, 17:53 by John Doe</span>
+													<img class="reviews__avatar" src="img/instadp__maniratnnparakh01_full_size.jpg" alt="">
+													<span class="reviews__name">🔥🔥🔥🔥</span>
+													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>8.4</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.5</span>
 												</div>
-												<p class="reviews__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+												<p class="reviews__text">I absolutely adored this film, it had 2 huge stars (Hugh  jackman and Rebecca ferguson) which initially drew me in. As for the actual film, it had a very unique plot and an amazing set. The water flooding Miami was designed beautifully and the costumes they all wore were excellent. I had very video gameish vibes from this movie which made it stand out for me. The set was gorgeous and well thought out and really went well with the plot. I definitely also felt a deep admiration for the characters and felt like I could relate to some aspects, which is always good to remember when character building. It was tragic, heartbreaking, while also keeping you on your toes because you never know what’s going to happen next. A+ mystery in my opinion, so many twists and turns. Highly recommend seeing this film, will not be a waste of your time or money!</p>
 											</li>
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/user.png" alt="">
-													<span class="reviews__name">Best Marvel movie in my opinion</span>
-													<span class="reviews__time">24.08.2018, 17:53 by John Doe</span>
+													<img class="reviews__avatar" src="img/IMG_20210622_194530_220.jpg" alt="">
+                                                    <span class="reviews__name" style="color: red;"> Spoiler Alert</span>
+													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.0</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>6.0</span>
 												</div>
-												<p class="reviews__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-											</li>
+												<p class="reviews__text">I have a few issues with the film: Hugh Jackman's character, Nick Bannister, does not come across as likeable by the end of the film. 
 
-											<li class="reviews__item">
-												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/user.png" alt="">
-													<span class="reviews__name">Best Marvel movie in my opinion</span>
-													<span class="reviews__time">24.08.2018, 17:53 by John Doe</span>
-
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>7.5</span>
-												</div>
-												<p class="reviews__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                                    I found his punishment of Cyrus Boothe, played by Ciff Curtis, in the sleeping pod / memory chamber- excessive. Bordering on NC-17 in its mean-spiritedness. We are then forced to trudge along with this character for another 20 minutes, as if we like him.
+                                                    
+                                                    I'm not saying a film should always have a likeable protagonist, but to do so otherwise is to tread into dangerous territory.
+                                                    
+                                                    Rebecca Ferguson's character- Mae, is incalculable mysterious: Is she a killer? A thief?! A savior? Nick's friend?- or a druggie- strung out, emotionless, hapless, and thus ruthless; bound forever in Cyrus Boothe's death-finishing spiral...
+                                                    
+                                                    When Mae speaks to Nick Bannister through Cyrus, anticipating it in his own dream, it gives me a frightening realization that anyone who has the clairvoyance and presence of mind to do that would be an irreplaceable asset to any government </p>
 											</li>
 										</ul>
 
@@ -688,55 +411,77 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic1.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic1.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="img/gallery/Reminiscence1.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence1.jpg" itemprop="thumbnail" alt="Image description" />
 										</a>
-										<figcaption itemprop="caption description">Domnic Torreto</figcaption>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/project-2.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/project-2.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="img/gallery/Reminiscence2.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence2.jpg" itemprop="thumbnail" alt="Image description" />
 										</a>
-										<figcaption itemprop="caption description">Some image caption 2</figcaption>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/project-3.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/project-3.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="img/gallery/Reminiscence3.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence3.jpg" itemprop="thumbnail" alt="Image description" />
 										</a>
-										<figcaption itemprop="caption description">Some image caption 3</figcaption>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/project-4.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/project-4.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="img/gallery/Reminiscence4.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence4.jpg" itemprop="thumbnail" alt="Image description" />
 										</a>
-										<figcaption itemprop="caption description">Some image caption 4</figcaption>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/project-5.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/project-5.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="img/gallery/Reminiscence5.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence5.jpg" itemprop="thumbnail" alt="Image description" />
 										</a>
-										<figcaption itemprop="caption description">Some image caption 5</figcaption>
+										n 5</figcaption>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/project-6.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/project-6.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="img/gallery/Reminiscence6.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence6.jpg" itemprop="thumbnail" alt="Image description" />
 										</a>
-										<figcaption itemprop="caption description">Some image caption 6</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/Reminiscence7.png" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence7.png" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/Reminiscence8.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence8.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/Reminiscence9.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/Reminiscence9.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
 									</figure>
 									<!-- end gallery item -->
 								</div>
@@ -760,18 +505,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
-									<a href="#" class="card__play">
+									<img src="img/covers/cover4.jpg" alt="">
+									<a href="Haseen.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
 									<span class="card__category">
-										<a href="#">Action</a>
-										<a href="#">Triler</a>
+										<a href="#">Crime</a>
+										<a href="#">Drama</a>
+										<a href="#">Mystery</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.9</span>
 								</div>
 							</div>
 						</div>
@@ -781,17 +527,40 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
-									<a href="#" class="card__play">
+									<img src="img/covers/ff9.jpg" alt="">
+									<a href="F9.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<h3 class="card__title"><a href="F9.html">Fast and Furious 9</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+									    <a href="#">Adventure</a>
+                                        <a href="#">Crime</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>5.2</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/mimi.jpg" alt="">
+									<a href="mimi.html" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
+									    <a href="#">Drama</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.0</span>
 								</div>
 							</div>
 						</div>
@@ -802,39 +571,17 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="img/covers/cover3.jpg" alt="">
-									<a href="#" class="card__play">
+									<a href="Thailavi.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<h3 class="card__title"><a href="Thailavi.html">Thalaivi-</a></h3>
 									<span class="card__category">
-										<a href="#">Romance</a>
-										<a href="#">Drama</a>
-										<a href="#">Music</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-6">
-							<div class="card">
-								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
+										<a href="#">Biography</a>
 										<a href="#">Drama</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.1</span>
 								</div>
 							</div>
 						</div>
@@ -844,18 +591,17 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="img/covers/sooraraipottru.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<h3 class="card__title"><a href="#">Soorarai Pottru</a></h3>
 									<span class="card__category">
-										<a href="#">Action</a>
-										<a href="#">Triler</a>
+										<a href="#">Drama</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>9.1</span>
 								</div>
 							</div>
 						</div>
@@ -865,17 +611,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
-									<a href="#" class="card__play">
+									<img src="img/covers/Chehre.jpg" alt="">
+									<a href="Chehre.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
 									<span class="card__category">
-										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+										<a href="#">Mystery</a>
+										<a href="#">Thriller</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.7</span>
 								</div>
 							</div>
 						</div>
@@ -928,8 +676,8 @@
 				<div class="col-12 col-sm-4 col-md-3">
 					<h6 class="footer__title">Contact</h6>
 					<ul class="footer__list">
-						<li><a href="tel:+91 9011675787">+91 9011675787</a></li>
-						<li><a href="mailto:cse200001028@iiti.ac.in">support@CineShow.com</a></li>
+						<li><a href="tel:+18002345678">+91 7796108178</a></li>
+						<li><a href="mailto:support@moviego.com">support@CineShow.com</a></li>
 					</ul>
 					<ul class="footer__social">
 						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
@@ -940,7 +688,18 @@
 				</div>
 				<!-- end footer list -->
 
-				
+				<!-- footer copyright -->
+				<div class="col-12">
+					<div class="footer__copyright">
+						<small><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></small>
+
+						<ul>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end footer copyright -->
 			</div>
 		</div>
 	</footer>

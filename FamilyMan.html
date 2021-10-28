@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/plyr.css">
+	<link rel="stylesheet" href="css/photoswipe.css">
+	<link rel="stylesheet" href="css/default-skin.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="icon"  href="icon/favi.png">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Cine Show – Online Movies, TV Shows & Cinema </title>
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__content">
+							<!-- header logo -->
+							<a href="index.html" class="header__logo">
+								<img src="img/CineShow.png" alt="">
+							</a>
+							<!-- end header logo -->
+
+							<!-- header nav -->
+							<ul class="header__nav">
+								<li class="header__nav-item">
+									<a href="index.html" class="header__nav-link">Home</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="pricing.html" class="header__nav-link">Pricing Plan</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="faq.html" class="header__nav-link">Help</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="about.html" class="header__nav-link">About</a>
+								</li>
+							</ul>
+							<!-- end header nav -->
+
+							<!-- header auth -->
+							<div class="header__auth">
+							
+
+								<a href="signin.html" class="header__sign-in">
+									<i class="icon ion-ios-log-in"></i>
+									<span>sign in</span>
+								</a>
+							</div>
+							<!-- end header auth -->
+
+							<!-- header menu btn -->
+							<button class="header__btn" type="button">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<!-- end header menu btn -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- header search -->
+		<form action="#" class="header__search">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__search-content">
+							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
+
+							<button type="button">search</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<!-- end header search -->
+	</header>
+	<!-- end header -->
+
+	<!-- details -->
+	<section class="section details">
+		<!-- details background -->
+		<div class="details__bg" data-bg="img/home/FamilyManhdbg.jpg"></div>
+		<!-- end details background -->
+
+		<!-- details content -->
+		<div class="container">
+			<div class="row">
+				<!-- title -->
+				<div class="col-12">
+					<h1 class="details__title">Mirzapur</h1>
+				</div>
+				<!-- end title -->
+
+				<!-- content -->
+				<div class="col-10">
+					<div class="card card--details card--series">
+						<div class="row">
+							<!-- card cover -->
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+								<div class="card__cover">
+									<img src="img/covers/FamilyMan2.jpg" alt="">
+								</div>
+							</div>
+							<!-- end card cover -->
+
+							<!-- card content -->
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+								<div class="card__content">
+									<div class="card__wrap">
+										<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
+
+										<ul class="card__list">
+											<li>HD</li>
+											<li>16+</li>
+										</ul>
+									</div>
+
+									<ul class="card__meta">
+										<li><span>Genre:</span> <a href="#">Action</a><a href="#">Comedy</a><a href="#">Drama</a></li>
+										<li><span>Release year:</span> 2019-2021</li>
+										<li><span>Number of Season:</span> 2</li>
+										<li><span>Country:</span> <a href="#">India</a></li>
+									</ul>
+
+									<div class="card__description card__description--details">
+										The Family Man is an edgy action-drama series, which tells the story of a middle-class man who works for a special cell of the National Investigation Agency. While he tries to protect the nation from terrorists, he also has to protect his family from the impact of his secretive, high-pressure, and low paying job.
+									</div>
+								</div>
+							</div>
+							<!-- end card content -->
+						</div>
+					</div>
+				</div>
+				<!-- end content -->
+
+				<!-- player -->
+				<div class="col-12 col-xl-6">
+					<video controls crossorigin playsinline poster="../../../cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+						<!-- Video files -->
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
+
+						<!-- Caption files -->
+						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+						    default>
+						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+						<!-- Fallback for browsers that don't support the <video> element -->
+						<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+					</video>
+				</div>
+				<!-- end player -->
+
+				<!-- accordion -->
+				<div class="col-12 col-xl-6">
+					<div class="accordion" id="accordion">
+						<div class="accordion__card">
+							<div class="card-header" id="headingOne">
+								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<span>Season: 1</span>
+									<span>9 Episodes on 16 October 2018</span>
+								</button>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Jhandu</td>
+												<td>Friday, 2 October 2018</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Gooda</td>
+												<td>Friday, 9 October 2018</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Wafadar</td>
+												<td>Friday, 16 October 2018</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Virginity</td>
+												<td>Friday, 23 October 2018</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Bhaukal</td>
+												<td>Friday, 30 October 2018</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Barfi</td>
+												<td>Friday, 6 June 2020</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Lions Of Mirzapur</td>
+												<td>Friday, 13 June 2020</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Tandav</td>
+												<td>Friday, 20 June 2020</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Yogya</td>
+												<td>Friday, 27 June 2020</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion__card">
+							<div class="card-header" id="headingTwo">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<span>Season: 2</span>
+									<span>10 Episodes on 23 October 2020</span>
+								</button>
+							</div>
+
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Dhenkul</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Khargosh</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Viklaang Quota</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Bhaymukt</td>
+												<td>Friday, 9 October 2020</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Langda</td>
+												<td>Friday, 16 October 2020</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Ankush</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Ood Bilaav</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Chauchak</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Butterscotch</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>King of Mirzapur</td>
+												<td>Friday, 23 October 2020</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end accordion -->
+
+				<!--Ticket-->
+				<div>
+					<a href="#" class="watch-now">Watch Now</a>
+				</div>
+				<!--end Ticket-->
+
+				<div class="col-12">
+					<div class="details__wrap">
+						<!-- availables -->
+						<div class="details__devices">
+							<span class="details__devices-title">Available on devices:</span>
+							<ul class="details__devices-list">
+								<li><i class="icon ion-logo-apple"></i><span>IOS</span></li>
+								<li><i class="icon ion-logo-android"></i><span>Android</span></li>
+								<li><i class="icon ion-logo-windows"></i><span>Windows</span></li>
+								<li><i class="icon ion-md-tv"></i><span>Smart TV</span></li>
+							</ul>
+						</div>
+						<!-- end availables -->
+
+						<!-- share -->
+						<div class="details__share">
+							<span class="details__share-title">Share with friends:</span>
+
+							<ul class="details__share-list">
+								<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+								<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+								<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+								<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+							</ul>
+						</div>
+						<!-- end share -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end details content -->
+	</section>
+	<!-- end details -->
+
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- content title -->
+						<h2 class="content__title">Discover</h2>
+						<!-- end content title -->
+
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="Comments">
+								<span></span>
+							</div>
+
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- end content mobile tabs nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xl-8">
+					<!-- content tabs -->
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+							<div class="row">
+								<!-- comments -->
+								<div class="col-12">
+									<div class="comments">
+										<ul class="comments__list">
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="img/Harsh Verma.jpg" alt="">
+													<span class="comments__name">Harsh Verma</span>
+													<span class="comments__time">02.08.2018, 15:24</span>
+												</div>
+												<p class="comments__text">I don't know why but Babloo Bhaiya was my favorite character. 
+                                                    A Character with patience and Intelligence 😀😀😀</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
+
+														<button type="button">13<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+													
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="img/Aditya.jpeg" alt="">
+													<span class="comments__name">Aditya Deshmukh</span>
+													<span class="comments__time">30.08.2018, 17:53</span>
+												</div>
+												<p class="comments__text">This 3 min videos was better then the whole student of the year 2 two 😂😂😂</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>12</button>
+
+														<button type="button">7<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="img/Gaurav.jpg" alt="">
+													<span class="comments__name">Gaurav Gill</span>
+													<span class="comments__time">07.08.2018, 14:33</span>
+												</div>
+												<p class="comments__text">“Attack me bhi gun, defence me bhi gun. Hum banayenge Mirzapur ko Amrica.” 😂</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>99</button>
+
+														<button type="button">35<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+										</ul>
+
+										<form action="#" class="form">
+											<textarea id="text" name="text" class="form__textarea" placeholder="Add comment"></textarea>
+											<button type="button" class="form__btn">Send</button>
+										</form>
+									</div>
+								</div>
+								<!-- end comments -->
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+							<div class="row">
+								<!-- reviews -->
+								<div class="col-12">
+									<div class="reviews">
+										<ul class="reviews__list">
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="img/instadp__maniratnnparakh01_full_size.jpg" alt="">
+													<span class="reviews__name">A must watch series</span>
+													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>10.0</span>
+												</div>
+												<p class="reviews__text">Before watching the series read the star cast 'Pankaj Tripathi', 'Vikrant Messy', 'Amit Sial', 'Divyendu' and 'Ali Fazal' supported by Rasika Duggal, Shweta Tripathi and Shreya Pilgaonkar. There is no doubt that Pankaj Tripathi, Vikrant Massey and Amit sial are acting powerhouse but Divyendu and Ali Fazal by their unbelievable acting. The story is gripping and will keep you glued till the end. I would recommend to watch the series specially for 'Pankaj Tripathi'.</p>
+											</li>
+
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="img/IMG_20210622_194530_220.jpg" alt="">
+                                                    <span class="reviews__name">Web Series Ka Wasseypur!!</span>
+													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>7.0</span>
+												</div>
+												<p class="reviews__text">A direct sequel to the first season which ended in bloodbath at a wedding reception, Mirzapur 2 ups the ante as far as the violence and cuss words go but falls tad short compared to season one due to the unnecessary cramming of fresh characters which frankly, dont add significant value to the plot.
+
+                                                    Guddu Pandit (Ali Fazal) and Golu Gupta (Shweta Tripathi) are recuperating in hibernation while thirsting for revenge. Munna Bhaiyya (Divyendu Sharma) survives the attack from first season finalè and hopelessly, tries to be worthy successor to dad Kaleen Bhaiyya (Pankaj Tripathi) who is expanding his political base from Mirzapur to other parts of the hinterland.</p>
+											</li>
+										</ul>
+
+										<form action="#" class="form">
+											<input type="text" class="form__input" placeholder="Title">
+											<textarea class="form__textarea" placeholder="Review"></textarea>
+											<div class="form__slider">
+												<div class="form__slider-rating" id="slider__rating"></div>
+												<div class="form__slider-value" id="form__slider-value"></div>
+											</div>
+											<button type="button" class="form__btn">Send</button>
+										</form>
+									</div>
+								</div>
+								<!-- end reviews -->
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+							<!-- project gallery -->
+							<div class="gallery" itemscope>
+								<div class="row">
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur1.webp" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur1.webp" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur2.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur2.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur3.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur3.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur4.jpeg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur4.jpeg" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur5.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur5.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur6.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur6.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur7.png" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur7.png" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur8.jpeg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur8.jpeg" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="img/gallery/mirzapur9.jpg" itemprop="contentUrl" data-size="1920x1280">
+											<img src="img/gallery/mirzapur9.jpg" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+								</div>
+							</div>
+							<!-- end project gallery -->
+						</div>
+					</div>
+					<!-- end content tabs -->
+				</div>
+
+				<!-- sidebar -->
+				<div class="col-12 col-lg-4 col-xl-4">
+					<div class="row">
+						<!-- section title -->
+						<div class="col-12">
+							<h2 class="section__title section__title--sidebar">You may also like...</h2>
+						</div>
+						<!-- end section title -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/cover4.jpg" alt="">
+									<a href="Haseen.html" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+									<span class="card__category">
+										<a href="#">Crime</a>
+										<a href="#">Drama</a>
+										<a href="#">Mystery</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/ff9.jpg" alt="">
+									<a href="F9.html" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="F9.html">Fast and Furious 9</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+									    <a href="#">Adventure</a>
+                                        <a href="#">Crime</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>5.2</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/mimi.jpg" alt="">
+									<a href="mimi.html" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									    <a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.0</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/cover3.jpg" alt="">
+									<a href="Thailavi.html" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="Thailavi.html">Thalaivi-</a></h3>
+									<span class="card__category">
+										<a href="#">Biography</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/sooraraipottru.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Soorarai Pottru</a></h3>
+									<span class="card__category">
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>9.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="img/covers/Chehre.jpg" alt="">
+									<a href="Chehre.html" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
+									<span class="card__category">
+										<a href="#">Drama</a>
+										<a href="#">Mystery</a>
+										<a href="#">Thriller</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.7</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+				<!-- end sidebar -->
+			</div>
+		</div>
+	</section>
+	<!-- end content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- footer list -->
+				<div class="col-12 col-md-3">
+					<h6 class="footer__title">Download Our App</h6>
+					<ul class="footer__app">
+						<li><a href="#"><img src="img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/google-play-badge.png" alt=""></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Resources</h6>
+					<ul class="footer__list">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Pricing Plan</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Legal</h6>
+					<ul class="footer__list">
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Security</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-12 col-sm-4 col-md-3">
+					<h6 class="footer__title">Contact</h6>
+					<ul class="footer__list">
+						<li><a href="tel:+91 7796108178">+91 7796108178</a></li>
+						<li><a href="mailto:cse200001028@iiti.ac.in">support@CineShow.com</a></li>
+					</ul>
+					<ul class="footer__social">
+						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+						<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+						<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+						<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe. 
+		It's a separate element, as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+			<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					<!-- Preloader -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="js/wNumb.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/plyr.min.js"></script>
+	<script src="js/jquery.morelines.min.js"></script>
+	<script src="js/photoswipe.min.js"></script>
+	<script src="js/photoswipe-ui-default.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
