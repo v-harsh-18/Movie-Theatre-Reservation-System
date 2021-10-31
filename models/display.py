@@ -20,6 +20,13 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '5792'
 app.config['MYSQL_DB'] = 'reservation'
 
+def login_is_required(function):
+        if "google_id" not in session:
+            return redirect('/login')
+        else:
+            return function()
+
+
 def index():
     return render_template('index.html')
 
@@ -48,6 +55,8 @@ def about():
     return render_template('about.html')     
 
 def booking():
+    login_is_required
+
     seats={'A1','A9'}
     return render_template('booking.html',seats=seats)    
 

@@ -11,6 +11,7 @@ import pathlib
 from werkzeug.utils import secure_filename, send_file
 import models.display as display
 import models.booking as bookin
+from flask_mail import *
 
 app=Flask(__name__)
 app.secret_key = 'secret'
@@ -43,6 +44,17 @@ app.config['MYSQL_DB'] = 'faculty_assignment'
 app.secret_key = 'your secret key'
  
 mysql = MySQL(app)
+
+
+app.config.update(
+    MAIL_SERVER = 'smtp.gmail.com',
+    MAIL_PORT = '465',
+    MAIL_USE_SSL = True,
+    MAIL_USERNAME = 'notifyindia2021@gmail.com',
+    MAIL_PASSWORD=  'bleh_bleh'
+)
+mail = Mail(app)
+
 
 def login_is_required(function):
     def wrapper(*args, **kwargs):
@@ -79,7 +91,34 @@ def callback():
     )
 
     session["google_id"] = id_info.get("sub")
-    session["name"] = id_info.get("name")
+    
+    user_id=id_info.get('sub')
+    email=id_info.get('email')
+    fname=id_info.get('given_name')
+    lname=id_info.get('family_name')
+
+    query='''
+    SELECT *
+    FROM reservation.user_account
+    WHERE user_id=%s'''
+
+    usid='''
+    INSERT INTO reservation.user_account(user_id,fname,lname,email)
+    VALUES(%s,%s,%s,%s)
+    '''
+
+    cursor = mysql.connection.cursor()
+    cursor.execute(query,[user_id])
+    uid=cursor.fetchone()
+    cursor.close()
+
+    if(uid==None):
+        print(1)
+        cursor = mysql.connection.cursor()
+        cursor.execute(usid,[user_id,fname,lname,email])
+        mysql.connection.commit()
+        cursor.close()
+
     return redirect("/info")
 
 @app.route("/logout")
