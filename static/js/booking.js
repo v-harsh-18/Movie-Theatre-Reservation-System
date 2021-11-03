@@ -13,17 +13,17 @@ fetch(`https://api.themoviedb.org/3/movie/${sessionStorage.getItem('movieID')}?a
         headerTitle.innerHTML = data.title;
     });
 
-// const loadSeats = () => {
-//     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
+const loadSeats = () => {
+    const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
 
-//     if (selectedSeats !== null) {
-//         seats.forEach((seat, index) => {
-//             if (selectedSeats.indexOf(index) > -1) {
-//                 seat.classList.add('seat-selected');
-//             };
-//         });
-//     };
-// };
+    if (selectedSeats !== null) {
+        seats.forEach((seat, index) => {
+            if (selectedSeats.indexOf(index) > -1) {
+                seat.classList.add('seat-selected');
+            };
+        });
+    };
+};
 
 const updateTotal = () => {
     // Get all selected seats
@@ -46,16 +46,8 @@ const updateTotal = () => {
 
 // Toggle seat selection
 seatsContainer.addEventListener('click', (e) => {
-    let id=(e.target.classList[2])
+
     if (e.target.classList.contains('seat') && !e.target.classList.contains('seat-booked')) {
-        if(e.target.classList.contains('seat-selected')){
-            let inp=document.getElementById(id)
-            inp.setAttribute('value','')
-        }
-        else{
-            let inp=document.getElementById(id)
-            inp.setAttribute('value',id)
-        }
         e.target.classList.toggle('seat-selected');
         updateTotal();
     };
@@ -66,7 +58,7 @@ seatsContainer.addEventListener('click', (e) => {
 //     e.preventDefault();
 //     const selectedSeats = document.querySelectorAll('.row .seat-selected');
 //     if (selectedSeats.length > 0) {
-//         console.log('hello');
+//         console.log('hello')
 //     } else {
 //         alert('Please make a seat selection.');
 //     };
