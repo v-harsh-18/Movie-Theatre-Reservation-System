@@ -52,13 +52,7 @@ def faq():
     return render_template('faq.html')     
 
 def about():
-    return render_template('about.html')     
-
-def booking():
-    login_is_required
-
-    seats={'A1','A9'}
-    return render_template('booking.html',seats=seats)    
+    return render_template('about.html')      
 
 def bell():
     return render_template('bell.html')  

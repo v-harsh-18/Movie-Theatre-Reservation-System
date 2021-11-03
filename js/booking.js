@@ -31,9 +31,10 @@ const updateTotal = () => {
 
     // Update Total Tickets
     ticketTotal.innerHTML = `${selectedSeats.length} Tickets`;
-
+    let price=(125 * selectedSeats.length).toFixed(2)
     // Update Price
     paymentTotalBtn.innerHTML = `Pay ₹ ${(125 * selectedSeats.length).toFixed(2)}`;
+
 
     // Save selected seats to local storage
     // This is creating an array that contains the index of each selected seat

@@ -10,8 +10,9 @@ import requests
 import pathlib
 from werkzeug.utils import secure_filename, send_file
 import models.display as display
-import models.booking as bookin
+import models.booking as booking
 from flask_mail import *
+import datetime
 
 app=Flask(__name__)
 app.secret_key = 'secret'
@@ -119,7 +120,7 @@ def callback():
         mysql.connection.commit()
         cursor.close()
 
-    return redirect("/info")
+    return redirect("/")
 
 @app.route("/logout")
 def logout():
@@ -135,7 +136,7 @@ app.add_url_rule('/pricing', view_func=display.pricing, methods=['GET'])
 app.add_url_rule('/faq', view_func=display.faq, methods=['GET'])
 app.add_url_rule('/about', view_func=display.about, methods=['GET'])
 app.add_url_rule('/details2', view_func=display.details2, methods=['GET'])
-app.add_url_rule('/booking', view_func=display.booking, methods=['GET'])
+app.add_url_rule('/booking', view_func=booking.booking, methods=['GET'])
 app.add_url_rule('/f9', view_func=display.f9, methods=['GET'])
 app.add_url_rule('/bell', view_func=display.bell, methods=['GET'])
 app.add_url_rule('/bhuj', view_func=display.bhuj, methods=['GET'])
@@ -160,6 +161,6 @@ app.add_url_rule('/soorarai', view_func=display.soorarai, methods=['GET'])
 app.add_url_rule('/thailavi', view_func=display.thailavi, methods=['GET'])
 app.add_url_rule('/confirmation', view_func=display.confirmation, methods=['GET'])
  
-app.add_url_rule('/book', view_func=bookin.booki, methods=['POST'])
+app.add_url_rule('/book', view_func=booking.booked, methods=['POST'])
 
 app.run(debug=True)

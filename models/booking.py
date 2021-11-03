@@ -12,6 +12,7 @@ from werkzeug.utils import secure_filename, send_file
 import models.display as display
 import models.booking as bookin
 from flask_mail import *
+import datetime
 
 app=Flask(__name__)
 app.secret_key = 'secret'
@@ -35,20 +36,72 @@ app.config.update(
 )
 mail = Mail(app)
 
+def login_is_required(function):
+    def wrapper(*args, **kwargs):
+        if "google_id" not in session:
+            return redirect('/login')
+        else:
+            return function()
 
-def booki():
+    return wrapper
+
+
+def booking():
+    login_is_required
+
+    idshowing='Mimi0001121110513'
+    title='Mimi'
+
+    query='''
+    SELECT seat 
+    FROM reservation.seats
+    WHERE idshowing=%s
+    '''
+
+    booked=[]
+
+    cursor = mysql.connection.cursor()
+    cursor.execute(query,[idshowing])
+    seats=cursor.fetchall()
+    cursor.close()
+
+    for seat in seats:
+        booked.append(seat[0])
+
+
+    print(booked)
+    return render_template('booking.html',seats=booked,title=title,idshowing=idshowing)   
+
+def booked():
     if request.method=='POST':
      seats=request.form.getlist('book')
+
      booked=[]
+
+     time=datetime.datetime.now()
+
+     price=request.form['price']
+
+     idshowing=request.form['idshowing']
+
+     num=len(seats)
+
+     selected=''
 
      for seat in seats:
          if seat!='':
           booked.append(seat)
+          selected=selected+' '+seat
 
      query='''
     SELECT *
     FROM reservation.user_account
     WHERE user_id=%s'''
+
+     status='''
+    SELECT *
+    FROM reservation.showing
+    WHERE idShowing=%s'''
 
      user_id=session['google_id']
 
@@ -57,9 +110,14 @@ def booki():
      uid=cursor.fetchone()
      cursor.close()  
 
-     print(uid[1])
-   
+     cursor = mysql.connection.cursor()
+     cursor.execute(status,[idshowing])
+     status=cursor.fetchone()
+     cursor.close()  
+     
 
-     mail.send_message('New message from ' + 'Cine Show', sender='Cine Show', recipients = [uid[1]], body = 'message' + "\n" + 'phone')    
+     print(seats)
+
+    # mail.send_message('New message from ' + 'Cine Show', sender='Cine Show', recipients = [uid[1]], body = 'message' + "\n" + 'phone')    
     
      return redirect('/confirmation')

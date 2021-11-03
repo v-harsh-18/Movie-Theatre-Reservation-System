@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=yes">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>CineShow | Book Seats</title>
 </head>
-<body>
+<body >
     <div class="booking-container">
         <header class="booking-header">
             <div>
-                <img src="{{ url_for('static', filename='./img/covers/ff9.jpg') }}" alt="movie-poster" class="booking-header__img" >
-                <h2 class="booking-header__title">Fast and Furious 9</h2>
+                <img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="movie-poster" class="booking-header__img" >
+                <h2 class="booking-header__title">{{title}}</h2>
             </div>
             <h3 class="booking-header__total">0 Tickets</h3>
         </header>
@@ -64,8 +64,9 @@
         </div>
         {% endfor %}
     </section>
-    
-    <button type ="submit" class="payment-btn">Pay ₹ 0.00</button>
+    <input type="text" name="idshowing" value="{{idshowing}}" style="display: none;">
+    <input type="text" id="priceinput" name="price" style="display: none;">
+    <button type ="submit" class="payment-btn" >Pay ₹ 0.00</button>
        
        
 </form>
