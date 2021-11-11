@@ -6,22 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" href="css/nouislider.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/plyr.css">
-	<link rel="stylesheet" href="css/photoswipe.css">
-	<link rel="stylesheet" href="css/default-skin.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
 	<!-- Favicons -->
-	<link rel="icon"  href="icon/favi.png">
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -175,7 +175,10 @@
 
 						<!--Ticket-->
 						<div>
-							<a href="./booking.html" class="buy-tkt">Buy tickets</a>
+							<form method="POST" action="/timings">
+								<input type="text" style="display: none;" value="Indoo ki Jawani" name="title">
+							<button type="submit" class="buy-tkt">Buy tickets</button>
+							</form>
 					    </div>
 						<!--end Ticket-->
 
@@ -720,18 +723,18 @@
 	</div>
 
 	<!-- JS -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.mousewheel.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.min.js"></script>
-	<script src="js/wNumb.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/plyr.min.js"></script>
-	<script src="js/jquery.morelines.min.js"></script>
-	<script src="js/photoswipe.min.js"></script>
-	<script src="js/photoswipe-ui-default.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mousewheel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/plyr.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.morelines.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe-ui-default.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>

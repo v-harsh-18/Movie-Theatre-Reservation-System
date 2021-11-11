@@ -50,6 +50,7 @@ def timings():
 
     if request.method=='POST':
         title=request.form['title']
+        print(title)
 
     return redirect('/booking')    
 

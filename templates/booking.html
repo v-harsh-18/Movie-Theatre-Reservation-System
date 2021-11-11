@@ -9,11 +9,24 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+	<!-- Favicons -->
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
     <title>CineShow | Book Seats</title>
 </head>
 <body >
 
-    <header class="header">
+    <header class="header" style="position:relative">
 		<div class="header__wrap">
 			<div class="container">
 				<div class="row">
@@ -50,9 +63,9 @@
 							<div class="header__auth">
 
 
-								<a href="/login" class="header__sign-in">
+								<a href="/logout" class="header__sign-in">
 									<i class="icon ion-ios-log-in"></i>
-									<span>sign in</span>
+									<span>sign out</span>
 								</a>
 							</div>
 						</div>
