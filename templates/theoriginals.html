@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+
+	<!-- Favicons -->
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Cine Show – Online Movies, TV Shows & Cinema </title>
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__content">
+							<!-- header logo -->
+							<a href="/" class="header__logo">
+								<img src="{{ url_for('static', filename='img/CineShow.png') }}" alt="">
+							</a>
+							<!-- end header logo -->
+
+							<!-- header nav -->
+							<ul class="header__nav">
+								<li class="header__nav-item">
+									<a href="/" class="header__nav-link">Home</a>
+								</li>
+								<!-- end dropdown -->
+
+								<li class="header__nav-item">
+									<a href="/pricing" class="header__nav-link">Pricing Plan</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="/faq" class="header__nav-link">Help</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="/about" class="header__nav-link">About</a>
+								</li>
+							</ul>
+							<!-- end header nav -->
+
+							<!-- header auth -->
+							<div class="header__auth">
+
+
+								<a href="/login" class="header__sign-in">
+									<i class="icon ion-ios-log-in"></i>
+									<span>sign in</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- end header -->
+
+	<!-- details -->
+	<section class="section details">
+		<!-- details background -->
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/TheOriginals.png') }}"></div>
+		<!-- end details background -->
+
+		<!-- details content -->
+		<div class="container">
+			<div class="row">
+				<!-- title -->
+				<div class="col-12">
+					<h1 class="details__title">The Originals</h1>
+				</div>
+				<!-- end title -->
+
+				<!-- content -->
+				<div class="col-10">
+					<div class="card card--details card--series">
+						<div class="row">
+							<!-- card cover -->
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/TO.jpg') }}" alt="">
+								</div>
+							</div>
+							<!-- end card cover -->
+
+							<!-- card content -->
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+								<div class="card__content">
+									<div class="card__wrap">
+										<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
+
+										<ul class="card__list">
+											<li>HD</li>
+											<li>16+</li>
+										</ul>
+									</div>
+
+									<ul class="card__meta">
+										<li><span>Genre:</span> <a href="#">Horror</a><a href="#">Fantasy</a><a href="#">Supernatural</a></li>
+										<li><span>Release year:</span> 2013-2018</li>
+										<li><span>Number of Season:</span> 5</li>
+										<li><span>Country:</span> <a href="#">USA</a></li>
+									</ul>
+
+									<div class="card__description card__description--details">
+										A spin-off from The Vampire Diaries and set in New Orleans, The Originals centers on the Mikaelson siblings, otherwise known as the world's original vampires: Klaus (Joseph Morgan), Elijah (Daniel Gillies), and Rebekah (Claire Holt). Now Klaus must take down his protégé, Marcel (Charles Michael Davis), who is now in charge of New Orleans, in order to re-take his city, as he originally built New Orleans. Klaus departed from the city after being chased down by his father Mikael, while it was being constructed and Marcel took charge. As Klaus has returned after many years, his ego has provoked him to become the king of the city. "Every King needs an heir" says Klaus, accepting the unborn child. The child is a first to be born to a hybrid (part vampire, part werewolf) and a werewolf (Hayley).
+									</div>
+								</div>
+							</div>
+							<!-- end card content -->
+						</div>
+					</div>
+				</div>
+				<!-- end content -->
+
+				<!-- player -->
+				<div class="col-12 col-xl-6">
+					<video controls crossorigin playsinline poster="../../../cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+						<!-- Video files -->
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
+
+						<!-- Caption files -->
+						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+						    default>
+						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+						<!-- Fallback for browsers that don't support the <video> element -->
+						<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+					</video>
+				</div>
+				<!-- end player -->
+
+				<!-- accordion -->
+				<div class="col-12 col-xl-6">
+					<div class="accordion" id="accordion">
+						<div class="accordion__card">
+							<div class="card-header" id="headingOne">
+								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<span>Season: 1</span>
+									<span>22 Episodes from 3 October 2013 to 13 May 2014</span>
+								</button>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Always and Forever</td>
+												<td>Friday, 3 October 2013</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>House of the Rising Son</td>
+												<td>Friday, 8 October 2013</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Tangled Up in Blue</td>
+												<td>Friday, 15 October 2013</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Girl in New Orleans</td>
+												<td>Friday,22 October 2013</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Sinners and Saints</td>
+												<td>Friday, 29 October 2013</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Fruit of the Poisoned Tree</td>
+												<td>Friday, 5 November 2013</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Bloodletting</td>
+												<td>Friday, 12 November 2013</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>The River in Reverse</td>
+												<td>Friday, 26 November 2013</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Reigning Pain in New Orleans</td>
+												<td>Friday, 3 December 2013</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>The Casket Girls</td>
+												<td>Friday, 14 January 2014</td>
+											</tr>
+                                            <tr>
+												<th>11</th>
+												<td>Après Moi, Le Déluge</td>
+												<td>Friday, 21 January 2014</td>
+											</tr>
+                                            <tr>
+												<th>12</th>
+												<td>Dance Back from the Grave</td>
+												<td>Friday, 28 January 2014</td>
+											</tr>
+                                            <tr>
+												<th>13</th>
+												<td>Crescent City</td>
+												<td>Friday, 4 February 2014</td>
+											</tr>
+                                            <tr>
+												<th>14</th>
+												<td>Long Way Back from Hell</td>
+												<td>Friday, 25 January 2014</td>
+											</tr>
+                                            <tr>
+												<th>15</th>
+												<td>Le Grand Guignol</td>
+												<td>Friday, 4 March 2014</td>
+											</tr>
+                                            <tr>
+												<th>16</th>
+												<td>Farewell to Storyville</td>
+												<td>Friday, 11 March 2014</td>
+											</tr>
+                                            <tr>
+												<th>17</th>
+												<td>Moon Over Bourbon Street</td>
+												<td>Friday, 18 March 2014</td>
+											</tr>
+                                            <tr>
+												<th>18</th>
+												<td>The Big Uneasy</td>
+												<td>Friday, 15 April 2014</td>
+											</tr>
+                                            <tr>
+												<th>19</th>
+												<td>An Unblinking Death</td>
+												<td>Friday, 22 April 2014</td>
+											</tr>
+                                            <tr>
+												<th>20</th>
+												<td>A Closer Walk with Thee</td>
+												<td>Friday, 29 April 2014</td>
+											</tr>
+                                            <tr>
+												<th>21</th>
+												<td>The Battle of New Orleans</td>
+												<td>Friday, 6 May 2014</td>
+											</tr>
+                                            <tr>
+												<th>22</th>
+												<td>From a Cradle to a Grave</td>
+												<td>Friday, 13 May 2014</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion__card">
+							<div class="card-header" id="headingTwo">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<span>Season: 2</span>
+									<span>22 Episodes from 6 October 2014 to 11 May 2015</span>
+								</button>
+							</div>
+
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Rebirth</td>
+												<td>Friday, 6 October 2014</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Alive and Kicking</td>
+												<td>Friday, 13 October 2014</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Every Mother's Son</td>
+												<td>Friday, 20 October 2014</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Live and Let Die</td>
+												<td>Friday, 27 October 2014</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Red Door</td>
+												<td>Friday, 3 November 2014</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Wheel Inside the Wheel</td>
+												<td>Friday, 10 November 2014</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Chasing the Devil's Tail</td>
+												<td>Friday, 17 November 2014</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>The Brothers That Care Forgot</td>
+												<td>Friday, 24 November 2014</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>The Map of Moments</td>
+												<td>Friday, 8 December 2014</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>Gonna Set Your Flag on Fire</td>
+												<td>Friday, 19 January 2015</td>
+											</tr>
+                                            <tr>
+												<th>11</th>
+												<td>Brotherhood of the Damned</td>
+												<td>Friday, 26 January 2015</td>
+											</tr>
+                                            <tr>
+												<th>12</th>
+												<td>Sanctuary</td>
+												<td>Friday, 2 February 2015</td>
+											</tr>
+                                            <tr>
+												<th>13</th>
+												<td>The Devil Is Damned</td>
+												<td>Friday, 9 JFebruary 2015</td>
+											</tr>
+                                            <tr>
+												<th>14</th>
+												<td>I Love You, Goodbye</td>
+												<td>Friday, 19 February 2015</td>
+											</tr>
+                                            <tr>
+												<th>15</th>
+												<td>They All Asked for You</td>
+												<td>Friday, 26 February 2015</td>
+											</tr>
+                                            <tr>
+												<th>16</th>
+												<td>Save My Soul</td>
+												<td>Friday, 16 March 2015</td>
+											</tr>
+                                            <tr>
+												<th>17</th>
+												<td>Exquisite Corpse</td>
+												<td>Friday, 6 April 2015</td>
+											</tr>
+                                            <tr>
+												<th>18</th>
+												<td>Night Has a Thousand Eyes</td>
+												<td>Friday, 13 April 2015</td>
+											</tr>
+                                            <tr>
+												<th>19</th>
+												<td>When the Levee Breaks</td>
+												<td>Friday, 20 April 2015</td>
+											</tr>
+                                            <tr>
+												<th>20</th>
+												<td>City Beneath the Sea</td>
+												<td>Friday, 27 April 2015</td>
+											</tr>
+                                            <tr>
+												<th>21</th>
+												<td>Fire with Fire</td>
+												<td>Friday, 4 May 2015</td>
+											</tr>
+                                            <tr>
+												<th>22</th>
+												<td>Ashes to Ashes</td>
+												<td>Friday, 11 May 2015</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+                        <div class="accordion__card">
+							<div class="card-header" id="headingThree">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<span>Season: 3</span>
+									<span>22 Episodes from 8 October 2015 to 20 May 2016</span>
+								</button>
+							</div>
+
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>For the Next Millennium</td>
+												<td>Friday, 8 October 2015</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>You Hung the Moon</td>
+												<td>Friday, 15 October 2015</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>I'll See You in Hell or New Orleans</td>
+												<td>Friday, 22 October 2015</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>A Walk on the Wild Side</td>
+												<td>Friday, 29 October 2015</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>The Axeman's Letter</td>
+												<td>Friday, 5 November 2015</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Beautiful Mistake</td>
+												<td>Friday, 12 November 2015</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Out of the Easy</td>
+												<td>Friday, 22 November 2015</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>The Other Girl in New Orleans</td>
+												<td>Friday, 29 November 2015</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Savior</td>
+												<td>Friday, 10 December 2015</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>A Ghost Along the Mississippi</td>
+												<td>Friday, 29 January 2016</td>
+											</tr>
+                                            <tr>
+												<th>11</th>
+												<td>Wild at Heart</td>
+												<td>Friday, 5 February 2016</td>
+											</tr>
+                                            <tr>
+												<th>12</th>
+												<td>Dead Angels</td>
+												<td>Friday, 12 February 2016</td>
+											</tr>
+                                            <tr>
+												<th>13</th>
+												<td>Heart Shaped Box</td>
+												<td>Friday, 19 February 2016</td>
+											</tr>
+                                            <tr>
+												<th>14</th>
+												<td>A Streetcar Named Desire</td>
+												<td>Friday, 19 February 2016</td>
+											</tr>
+                                            <tr>
+												<th>15</th>
+												<td>An Old Friend Calls</td>
+												<td>Friday, 4 March 2016</td>
+											</tr>
+                                            <tr>
+												<th>16</th>
+												<td>Alone with Everybody</td>
+												<td>Friday, 1 April 2016</td>
+											</tr>
+                                            <tr>
+												<th>17</th>
+												<td>Behind the Black Horizon</td>
+												<td>Friday, 8 April 2016</td>
+											</tr>
+                                            <tr>
+												<th>18</th>
+												<td>The Devil Comes Here and Sighs</td>
+												<td>Friday, 15 April 2016</td>
+											</tr>
+                                            <tr>
+												<th>19</th>
+												<td>No More Heartbreaks</td>
+												<td>Friday, 22 April 2016</td>
+											</tr>
+                                            <tr>
+												<th>20</th>
+												<td>Where Nothing Stays Buried</td>
+												<td>Friday, 29 April 2016</td>
+											</tr>
+                                            <tr>
+												<th>21</th>
+												<td>Give 'Em Hell Kid</td>
+												<td>Friday, 13 May 2016</td>
+											</tr>
+                                            <tr>
+												<th>22</th>
+												<td>The Bloody Crown</td>
+												<td>Friday, 20 May 2016</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+                        
+						<div class="accordion__card">
+							<div class="card-header" id="headingFour">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									<span>Season: 4</span>
+									<span>13 Episodes from 17 March 2017 to 23 June 2017</span>
+								</button>
+							</div>
+
+							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Gather Up the Killers</td>
+												<td>Friday, 17 March 2017</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>No Quarter</td>
+												<td>Friday, 24 March 2017</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Haunter of Ruins</td>
+												<td>Friday, 31 March 2017</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Keepers of the House</td>
+												<td>Friday, 7 April 2017</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>I Hear You Knocking</td>
+												<td>Friday, 14 April 2017</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Bag of Cobras</td>
+												<td>Friday, 28 April 2017</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>High Water and a Devil's Daughter</td>
+												<td>Friday, 5 May 2017</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Voodoo in My Blood</td>
+												<td>Friday, 12 May 2017</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Queen Death</td>
+												<td>Friday, 19 May 2017</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>Phantomesque</td>
+												<td>Friday, 26 May 2017</td>
+											</tr>
+                                            <tr>
+												<th>11</th>
+												<td>A Spirit Here That Won't Be Broken</td>
+												<td>Friday, 9 June 2017</td>
+											</tr>
+                                            <tr>
+												<th>12</th>
+												<td>Voodoo Child</td>
+												<td>Friday, 16 June 2017</td>
+											</tr>
+                                            <tr>
+												<th>13</th>
+												<td>The Feast of All Sinners</td>
+												<td>Friday, 13 June 2017</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+                        
+						<div class="accordion__card">
+							<div class="card-header" id="headingFive">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									<span>Season: 5</span>
+									<span>13 Episodes from 18 April 2018 to 1 August 2018</span>
+								</button>
+							</div>
+
+							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Where You Left Your Heart</td>
+												<td>Friday, 18 April 2018</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>One Wrong Turn on Bourbon</td>
+												<td>Friday, 25 April 2018</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Ne Me Quitte Pas</td>
+												<td>Friday, 2 May 2018</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Between the Devil and the Deep Blue Sea</td>
+												<td>Friday, 9 May 2018</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Don't It Just Break Your Heart</td>
+												<td>Friday, 16 May 2018</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>What, Will, I, Have, Left</td>
+												<td>Friday, 30 May 2018</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>God's Gonna Trouble the Water</td>
+												<td>Friday, 6 June 2018</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>The Kindness of Strangers</td>
+												<td>Friday, 13 June 2018</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>We Have Not Long to Love</td>
+												<td>Friday, 20 June 2018</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>There in the Disappearing Light</td>
+												<td>Friday, 11 July 2018</td>
+											</tr>
+                                            <tr>
+												<th>11</th>
+												<td>'Til the Day I Die</td>
+												<td>Friday, 18 July 2018</td>
+											</tr>
+                                            <tr>
+												<th>12</th>
+												<td>The Tale of Two Wolves</td>
+												<td>Friday, 25 July 2018</td>
+											</tr>
+                                            <tr>
+												<th>13</th>
+												<td>When the Saints Go Marching In</td>
+												<td>Friday, 1 August 2018</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end accordion -->
+
+				<!--Ticket-->
+				<div>
+					<a href="#" class="watch-now">Watch Now</a>
+				</div>
+				<!--end Ticket-->
+
+				<div class="col-12">
+					<div class="details__wrap">
+						<!-- availables -->
+						<div class="details__devices">
+							<span class="details__devices-title">Available on devices:</span>
+							<ul class="details__devices-list">
+								<li><i class="icon ion-logo-apple"></i><span>IOS</span></li>
+								<li><i class="icon ion-logo-android"></i><span>Android</span></li>
+								<li><i class="icon ion-logo-windows"></i><span>Windows</span></li>
+								<li><i class="icon ion-md-tv"></i><span>Smart TV</span></li>
+							</ul>
+						</div>
+						<!-- end availables -->
+
+						<!-- share -->
+						<div class="details__share">
+							<span class="details__share-title">Share with friends:</span>
+
+							<ul class="details__share-list">
+								<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+								<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+								<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+								<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+							</ul>
+						</div>
+						<!-- end share -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end details content -->
+	</section>
+	<!-- end details -->
+
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- content title -->
+						<h2 class="content__title">Discover</h2>
+						<!-- end content title -->
+
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="Comments">
+								<span></span>
+							</div>
+
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- end content mobile tabs nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xl-8">
+					<!-- content tabs -->
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+							<div class="row">
+								<!-- comments -->
+								<div class="col-12">
+									<div class="comments">
+										<ul class="comments__list">
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Harsh Verma.jpg') }}" alt="">
+													<span class="comments__name">Harsh Verma</span>
+													<span class="comments__time">02.08.2018, 15:24</span>
+												</div>
+												<p class="comments__text">THIS SHOW HAS TO CONTINUE ONWARDS!! 8 SEASONS!! 9! 10! INFINITY!!!</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
+
+														<button type="button">13<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+													
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Aditya.jpeg') }}" alt="">
+													<span class="comments__name">Aditya Deshmukh</span>
+													<span class="comments__time">30.08.2018, 17:53</span>
+												</div>
+												<p class="comments__text">I dont want marcel to die but I cant have him stronger than klaus</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>12</button>
+
+														<button type="button">7<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+											<li class="comments__item">
+												<div class="comments__autor">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Gaurav.jpg') }}" alt="">
+													<span class="comments__name">Gaurav Gill</span>
+													<span class="comments__time">07.08.2018, 14:33</span>
+												</div>
+												<p class="comments__text">and then hope just like: who tf are these people!😂</p>
+												<div class="comments__actions">
+													<div class="comments__rate">
+														<button type="button"><i class="icon ion-md-thumbs-up"></i>99</button>
+
+														<button type="button">35<i class="icon ion-md-thumbs-down"></i></button>
+													</div>
+
+													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
+													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
+												</div>
+											</li>
+
+										</ul>
+
+										<form action="#" class="form">
+											<textarea id="text" name="text" class="form__textarea" placeholder="Add comment"></textarea>
+											<button type="button" class="form__btn">Send</button>
+										</form>
+									</div>
+								</div>
+								<!-- end comments -->
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+							<div class="row">
+								<!-- reviews -->
+								<div class="col-12">
+									<div class="reviews">
+										<ul class="reviews__list">
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
+													<span class="reviews__name" style="color: red;">Warning: Spoilers</span>
+													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.0</span>
+												</div>
+												<p class="reviews__text">Season 5 got to my throat as it unfolded, it was sad and depressing not to see Hayley; I knew she will die in the season, I just didn't know when and how. Today, I reached that fateful episode...
+
+                                                    Never have I felt so sad and beaten for the fate, endured pain and untimely death of a beloved character. She died heroically and selflessly saving her loved one. Her facial expressions in her last moments still haunt me. My throat is clamped and my eyes are bright.
+                                                    
+                                                    I loved you Hayley. I loved your kindness, strength and beauty. You were a wonderful being, a warrior and a true hero.
+                                                    
+                                                    May you find peace, comfort and solace wherever you are.</p>
+											</li>
+
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
+                                                    <span class="reviews__name">Adore it!</span>
+													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>10.0</span>
+												</div>
+												<p class="reviews__text">One of my favorite shows ever made! This show really knows how to get the audience on the mood for every scene!</p>
+											</li>
+										</ul>
+
+										<form action="#" class="form">
+											<input type="text" class="form__input" placeholder="Title">
+											<textarea class="form__textarea" placeholder="Review"></textarea>
+											<div class="form__slider">
+												<div class="form__slider-rating" id="slider__rating"></div>
+												<div class="form__slider-value" id="form__slider-value"></div>
+											</div>
+											<button type="button" class="form__btn">Send</button>
+										</form>
+									</div>
+								</div>
+								<!-- end reviews -->
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+							<!-- project gallery -->
+							<div class="gallery" itemscope>
+								<div class="row">
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO1.jpeg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO1.jpeg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO2.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO3.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO4.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO5.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO6.png') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO6.png') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO7.png') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO7.png') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/TO9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/TO9.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+								</div>
+							</div>
+							<!-- end project gallery -->
+						</div>
+					</div>
+					<!-- end content tabs -->
+				</div>
+
+				<!-- sidebar -->
+				<div class="col-12 col-lg-4 col-xl-4">
+					<div class="row">
+						<!-- section title -->
+						<div class="col-12">
+							<h2 class="section__title section__title--sidebar">You may also like...</h2>
+						</div>
+						<!-- end section title -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/KotaFact2.jpg') }}" alt="">
+									<a href="/kotafactory" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="/kotafactoy">Kota Factory</a></h3>
+									<span class="card__category">
+										<a href="#">Crime</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>9.2</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/moneyheist5.jpg') }}" alt="">
+									<a href="/moneyheist" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="/moneyheist">Money Heist</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+									    <a href="#">Drama</a>
+                                        <a href="#">Crime</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/Mirzapur2.jpg') }}" alt="">
+									<a href="/mirzapur" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="/mirzapur">Mirzapur</a></h3>
+									<span class="card__category">
+										<a href="#">Crime</a>
+									    <a href="#">Drama</a>
+                                        <a href="#">Action</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.5</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/FamilyMan2.jpg') }}" alt="">
+									<a href="/familyman" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="/familyman">The Family Man</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Drama</a>
+                                        <a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/Four_More_Shorta_Please_Poster.jpg') }}" alt="">
+									<a href="/fourmoreshots" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="/fourmoreshots">Four More Shots Please!</a></h3>
+									<span class="card__category">
+                                        <a href="#">Comedy</a>
+										<a href="#">Drama</a>
+                                        <a href="#">Romance</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/squid_game.webp') }}" alt="">
+									<a href="/squidgames" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="/squidgames">Squid Games</a></h3>
+									<span class="card__category">
+										<a href="#">Drama</a>
+										<a href="#">Mystery</a>
+										<a href="#">Action</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+				<!-- end sidebar -->
+			</div>
+		</div>
+	</section>
+	<!-- end content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- footer list -->
+				<div class="col-12 col-md-3">
+					<h6 class="footer__title">Download Our App</h6>
+					<ul class="footer__app">
+						<li><a href="#"><img src="{{ url_for('static', filename='img/Download_on_the_App_Store_Badge.svg') }}" alt=""></a></li>
+						<li><a href="#"><img src="{{ url_for('static', filename='img/google-play-badge.png') }}" alt=""></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Resources</h6>
+					<ul class="footer__list">
+						<li><a href="/about">About Us</a></li>
+						<li><a href="/pricing">Pricing Plan</a></li>
+						<li><a href="/faq">Help</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Legal</h6>
+					<ul class="footer__list">
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Security</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-12 col-sm-4 col-md-3">
+					<h6 class="footer__title">Contact</h6>
+					<ul class="footer__list">
+						<li><a href="tel:+91 9011675787">+91 9011675787</a></li>
+						<li><a href="mailto:cse2000001028@iiti.ac.in">support@CineShow.com</a></li>
+					</ul>
+					<ul class="footer__social">
+						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+						<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+						<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+						<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- JS -->
+	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mousewheel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/plyr.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.morelines.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe-ui-default.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

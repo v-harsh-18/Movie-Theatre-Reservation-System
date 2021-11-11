@@ -9,16 +9,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
 
 	<!-- Favicons -->
 	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
@@ -86,7 +86,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/shiddathdbg.webp') }}"></div>
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/FamilyManhdbg.jpg') }}"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -94,27 +94,27 @@
 			<div class="row">
 				<!-- title -->
 				<div class="col-12">
-					<h1 class="details__title">Shiddat</h1>
+					<h1 class="details__title">The Family Man</h1>
 				</div>
 				<!-- end title -->
 
 				<!-- content -->
-				<div class="col-12 col-xl-6">
-					<div class="card card--details">
+				<div class="col-10">
+					<div class="card card--details card--series">
 						<div class="row">
 							<!-- card cover -->
-							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Shiddat.jpg') }}" alt="">
+									<img src="{{ url_for('static', filename='img/covers/FamilyMan2.jpg') }}" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
 
 							<!-- card content -->
-							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-7">
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
 								<div class="card__content">
 									<div class="card__wrap">
-										<span class="card__rate"><i class="icon ion-ios-star"></i>8.0</span>
+										<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
 
 										<ul class="card__list">
 											<li>HD</li>
@@ -123,13 +123,14 @@
 									</div>
 
 									<ul class="card__meta">
-										<li><span>Genre:</span><a href="#">Romance</a></li>
-										<li><span>Running time:</span> 146 min</li>
-										<li><span>Country:</span> <a href="#">India</a> </li>
+										<li><span>Genre:</span> <a href="#">Action</a><a href="#">Comedy</a><a href="#">Drama</a></li>
+										<li><span>Release year:</span> 2019-2021</li>
+										<li><span>Number of Season:</span> 2</li>
+										<li><span>Country:</span> <a href="#">India</a></li>
 									</ul>
 
 									<div class="card__description card__description--details">
-										Love-struck Jaggi can cross the seven seas for his dream girl, Kartika, even if it means stopping her wedding.
+										The Family Man is an edgy action-drama series, which tells the story of a middle-class man who works for a special cell of the National Investigation Agency. While he tries to protect the nation from terrorists, he also has to protect his family from the impact of his secretive, high-pressure, and low paying job.
 									</div>
 								</div>
 							</div>
@@ -159,6 +160,165 @@
 				</div>
 				<!-- end player -->
 
+				<!-- accordion -->
+				<div class="col-12 col-xl-6">
+					<div class="accordion" id="accordion">
+						<div class="accordion__card">
+							<div class="card-header" id="headingOne">
+								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<span>Season: 1</span>
+									<span>10 Episodes on 20 September 2019</span>
+								</button>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>The Family Man</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Sleepers</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Anti-National</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Patriots</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Pariah</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Dance Of Death</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Paradise</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Act Of War</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Fighting Dirty</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+											<tr>
+												<th>10</th>
+												<td>The Bomb</td>
+												<td>Friday, 20 September 2019</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion__card">
+							<div class="card-header" id="headingTwo">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<span>Season: 2</span>
+									<span>8 Episodes on 4 June 2021</span>
+								</button>
+							</div>
+
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Exile</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Weapon</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Angel of Death</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Eagle</td>
+												<td>Friday, 9 October 2020</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Homecoming</td>
+												<td>Friday, 16 October 2020</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Martyrs</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Collateral Damage</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Vendetta</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>The Final Act</td>
+												<td>Friday, 4 June 2021</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end accordion -->
+
+				<!--Ticket-->
+				<div>
+					<a href="#" class="watch-now">Watch Now</a>
+				</div>
+				<!--end Ticket-->
+
 				<div class="col-12">
 					<div class="details__wrap">
 						<!-- availables -->
@@ -172,12 +332,6 @@
 							</ul>
 						</div>
 						<!-- end availables -->
-
-						<!--Ticket-->
-						<div>
-							<a href="/booking.html" class="buy-tkt">Buy tickets</a>
-					    </div>
-						<!--end Ticket-->
 
 						<!-- share -->
 						<div class="details__share">
@@ -265,7 +419,7 @@
 													<span class="comments__name">Harsh Verma</span>
 													<span class="comments__time">02.08.2018, 15:24</span>
 												</div>
-												<p class="comments__text">I cried twice while watching this masterpiece. Everything was perfect. It's heartbreaking and spectacular 🤩</p>
+												<p class="comments__text">The trailer doesn’t justifies the quality of the whole series.</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
@@ -284,7 +438,7 @@
 													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
-												<p class="comments__text">The end would be like this I didn't even think I couldn't stop myself I started crying😭😭😭😭😭</p>
+												<p class="comments__text">The dialogue writer of this series deserves a place in heaven. 🤣🤣🤣🤣</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>12</button>
@@ -303,7 +457,7 @@
 													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
-												<p class="comments__text">This definitely needed a happy ending!! will take at least a week to recover lol</p>
+												<p class="comments__text">This series is a masterpiece 🔥🔥🔥</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>99</button>
@@ -337,28 +491,27 @@
 											<li class="reviews__item">
 												<div class="reviews__autor">
 													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
-													<span class="reviews__name">Great Movie🔥🔥🔥🔥</span>
+													<span class="reviews__name">Really enjoyed the show.</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.5</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>8.0</span>
 												</div>
-												<p class="reviews__text">shiddat is an emotion.
-                                                    jaggi is that character who speaks to you! 
-                                                    
-                                                    Sunny Kaushal and his honest charm elevated by Radhika Madan, Mohit Raina & diana penty’s performances
-                                                    
-                                                    The catching scene was when Jaggu is almost there to meet with kartika, still he said to her, I have crossed 10000 km but you have to cross more than that as you have Mom Dad Uncle Aunty that Karan also, so if you want you can drop out here as well..... That means it clearly shows Love is beyond everything.... </p>
+												<p class="reviews__text">Well I don't know about you but I sincerely thought the show was engaging, suspenseful and overall a brilliant season 1 and hoping there is season 2 and more somewhere in the pipeline.
+
+													Manoj Bajpayee is simply awesome to watch - a very charming actor who does a lot with very little - the rest of the cast are equally good and it's their relative anonymity that makes their characterisation that much more appealing and believable.
+													
+													Highly recommended - if you're from Mumbai you will surely love the city's backdrop in the earlier episodes.</p>
 											</li>
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
 													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
-                                                    <span class="reviews__name">Loved to watch Radhika Madan and Sunny Kaushal😍😍😍❤️😍😍😍</span>
+                                                    <span class="reviews__name">Perfect spy thriller web series....!!</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>10.0</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>8.0</span>
 												</div>
-												<p class="reviews__text">This movie is really a one boy show and he is jaggi ( Sunny kaushal ) what a terrific performance by him really what an outstanding performance 😍😍😍❤️😍😍😍😍😍🔥🔥🔥 and his punjabi accent really suits him sunny kaushal u and your brother Vicky kaushal both are talented and sunny kaushal deserves to get Big and intresting bollywood movie and performance by Mohit Raina was simply brilliant and how cute he looked in his role saari ladkiyaan fida ho jayenge inko dekhkar 😍😍😍😍❤️❤️❤️❤️❤️ and radhika madan before u have impressed me in ray series spotlight episode cameo in this movie u were so cute and beautiful and brilliant performance and diana penty I miss you so much after cocktail and happy bhag jayegi ur such a talented actress. Direction by Kunal Deshmukh was really beautiful ❤️❤️❤️😍😍😍 location was really great to watch and song's and music are so amazing especially shiddat title track I'm in loop to listen this song And story was simple but performance by every one was main positive point of this movie and screenplay in 2nd half movie shouldn't get so long 20 minutes could be less and end this movie but ending was really heartbreaking and heart touching and madness in love ❤️❤️❤️❤️🖤🖤 immigration scenes were not wroth for the movie that much . Overall this movie is made for every romantic movie lovers only not everyone 😜 </p>
+												<p class="reviews__text">A protogonist try to stop from terrorist execution and at same time he getting struggle to takecare his own family.. All castings were acted soo well including those kids.. It looks 7 hours action thriller movie.. Protogonist acted soo well and did comedy at some scenes.. Action sequences are soo good... Must watch web series..!!</p>
 											</li>
 										</ul>
 
@@ -383,57 +536,40 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat1.webp') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat1.webp') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan1.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat2.webp') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat2.webp') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan2.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat3.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan3.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat4.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan4.webp') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan4.webp') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat5.jpg') }}" itemprop="thumbnail" alt="Image description" />
-										</a>
-										n 5</figcaption>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat6.jpg') }}" itemprop="thumbnail" alt="Image description" />
-										</a>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat7.webp') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat7.webp') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan5.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -441,8 +577,16 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat8.jpeg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat8.jpeg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan6.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan7.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan7.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -450,8 +594,17 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat9.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/FamilyMan9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/FamilyMan9.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -477,19 +630,18 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-									<a href="Haseen.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/KotaFact2.jpg') }}" alt="">
+									<a href="/kotafactory" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+									<h3 class="card__title"><a href="/kotafactory">Kota Factory</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
-										<a href="#">Mystery</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.9</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>9.2</span>
 								</div>
 							</div>
 						</div>
@@ -499,19 +651,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
-									<a href="F9.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/moneyheist5.jpg') }}" alt="">
+									<a href="/moneyheist" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="F9.html">Fast and Furious 9</a></h3>
+									<h3 class="card__title"><a href="/moneyheist">Money Heist</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
-									    <a href="#">Adventure</a>
+									    <a href="#">Drama</a>
                                         <a href="#">Crime</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>5.2</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
 								</div>
 							</div>
 						</div>
@@ -521,18 +673,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
-									<a href="mimi.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Mirzapur2.jpg') }}" alt="">
+									<a href="/mirzapur" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+									<h3 class="card__title"><a href="/mirzapur">Mirzapur</a></h3>
 									<span class="card__category">
-										<a href="#">Comedy</a>
+										<a href="#">Crime</a>
 									    <a href="#">Drama</a>
+                                        <a href="#">Action</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.0</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.5</span>
 								</div>
 							</div>
 						</div>
@@ -542,18 +695,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-									<a href="Thailavi.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/TO.jpg') }}" alt="">
+									<a href="/theoriginals" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Thailavi.html">Thalaivi-</a></h3>
+									<h3 class="card__title"><a href="/theoriginals">The Originals</a></h3>
 									<span class="card__category">
-										<a href="#">Biography</a>
-										<a href="#">Drama</a>
+										<a href="#">Horror</a>
+										<a href="#">Fantasy</a>
+										<a href="#">Supernatural</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
 								</div>
 							</div>
 						</div>
@@ -563,17 +717,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Four_More_Shorta_Please_Poster.jpg') }}" alt="">
+									<a href="/fourmoreshots" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Soorarai Pottru</a></h3>
+									<h3 class="card__title"><a href="/fourmoreshots">Four More Shots Please!</a></h3>
 									<span class="card__category">
+                                        <a href="#">Comedy</a>
 										<a href="#">Drama</a>
+                                        <a href="#">Romance</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>9.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.4</span>
 								</div>
 							</div>
 						</div>
@@ -583,19 +739,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
-									<a href="Chehre.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/squid_game.webp') }}" alt="">
+									<a href="/squidgames" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
+									<h3 class="card__title"><a href="/squidgames">Squid Games</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 										<a href="#">Mystery</a>
-										<a href="#">Thriller</a>
+										<a href="#">Action</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.7</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
 								</div>
 							</div>
 						</div>
@@ -665,58 +821,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-
-	<!-- Root element of PhotoSwipe. Must have class pswp. -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-		<!-- Background of PhotoSwipe. 
-		It's a separate element, as animating opacity is faster than rgba(). -->
-		<div class="pswp__bg"></div>
-
-		<!-- Slides wrapper with overflow:hidden. -->
-		<div class="pswp__scroll-wrap">
-
-			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-			<!-- don't modify these 3 pswp__item elements, data is added later on. -->
-			<div class="pswp__container">
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-			</div>
-
-			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-			<div class="pswp__ui pswp__ui--hidden">
-
-				<div class="pswp__top-bar">
-
-					<!--  Controls are self-explanatory. Order can be changed. -->
-
-					<div class="pswp__counter"></div>
-
-					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-					<!-- Preloader -->
-					<div class="pswp__preloader">
-						<div class="pswp__preloader__icn">
-							<div class="pswp__preloader__cut">
-								<div class="pswp__preloader__donut"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-
-				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- JS -->
 	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>

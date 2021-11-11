@@ -9,16 +9,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
 
 	<!-- Favicons -->
 	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
@@ -86,7 +86,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/shiddathdbg.webp') }}"></div>
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/Narcoshdbg.jpg') }}"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -94,27 +94,27 @@
 			<div class="row">
 				<!-- title -->
 				<div class="col-12">
-					<h1 class="details__title">Shiddat</h1>
+					<h1 class="details__title">Narcos</h1>
 				</div>
 				<!-- end title -->
 
 				<!-- content -->
-				<div class="col-12 col-xl-6">
-					<div class="card card--details">
+				<div class="col-10">
+					<div class="card card--details card--series">
 						<div class="row">
 							<!-- card cover -->
-							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Shiddat.jpg') }}" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Narcos.png') }}" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
 
 							<!-- card content -->
-							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-7">
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
 								<div class="card__content">
 									<div class="card__wrap">
-										<span class="card__rate"><i class="icon ion-ios-star"></i>8.0</span>
+										<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
 
 										<ul class="card__list">
 											<li>HD</li>
@@ -123,13 +123,14 @@
 									</div>
 
 									<ul class="card__meta">
-										<li><span>Genre:</span><a href="#">Romance</a></li>
-										<li><span>Running time:</span> 146 min</li>
-										<li><span>Country:</span> <a href="#">India</a> </li>
+										<li><span>Genre:</span> <a href="#">Biography</a><a href="#">Crime</a><a href="#">Drama</a></li>
+										<li><span>Release year:</span> 2015-2017</li>
+										<li><span>Number of Season:</span> 3</li>
+										<li><span>Country:</span> <a href="#">USA</a></li>
 									</ul>
 
 									<div class="card__description card__description--details">
-										Love-struck Jaggi can cross the seven seas for his dream girl, Kartika, even if it means stopping her wedding.
+										Narcos tells the true-life story of the growth and spread of cocaine drug cartels across the globe and attendant efforts of law enforcement to meet them head on in brutal, bloody conflict. It centers around the notorious Colombian cocaine kingpin Pablo Escobar (Wagner Moura) and Steve Murphy (Holbrook), a DEA agent sent to Colombia on a U.S. mission to capture him and ultimately kill him.
 									</div>
 								</div>
 							</div>
@@ -159,6 +160,246 @@
 				</div>
 				<!-- end player -->
 
+				<!-- accordion -->
+				<div class="col-12 col-xl-6">
+					<div class="accordion" id="accordion">
+						<div class="accordion__card">
+							<div class="card-header" id="headingOne">
+								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<span>Season: 1</span>
+									<span>10 Episodes on 28 August 2015</span>
+								</button>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Descenso</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>The Sword of Simón Bolivar</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>The Men of Always</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>The Palace in Flames</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>There Will Be a Future</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Explosivos</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>You Will Cry Tears of Blood</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>La Gran Mentira</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>La Catedral</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>Despegue</td>
+												<td>Friday, 28 August 2015</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion__card">
+							<div class="card-header" id="headingTwo">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<span>Season: 2</span>
+									<span>10 Episodes on 2 September 2016</span>
+								</button>
+							</div>
+
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Free at Last</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Cambalache</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Our Man in Madrid</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>The Good, the Bad, and the Dead</td>
+												<td>Friday, 9 September 2020</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>The Enemies of My Enemy</td>
+												<td>Friday, 16 September 2020</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Los Pepes</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Deutschland 93</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Exit El Patrón</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Nuestra Finca</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>Al Fin Cayó!</td>
+												<td>Friday, 2 September 2016</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+                        <div class="accordion__card">
+							<div class="card-header" id="headingThree">
+								<button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<span>Season: 3</span>
+									<span>10 Episodes on 1 September 2017</span>
+								</button>
+							</div>
+
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>The Kingpin Strategy</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>The Cali KGB</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Follow the Money</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Checkmate</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>MRO</td>
+												<td>Friday, 1 September 2020</td>
+											</tr>
+                                            <tr>
+												<th>6</th>
+												<td>Best Laid Plans</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+                                            <tr>
+												<th>7</th>
+												<td>Sin Salida</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+                                            <tr>
+												<th>8</th>
+												<td>Convivir</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+                                            <tr>
+												<th>9</th>
+												<td>Todos Los Hombres del Presidente</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+                                            <tr>
+												<th>10</th>
+												<td>Going Back to Cali</td>
+												<td>Friday, 1 September 2017</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end accordion -->
+
+				<!--Ticket-->
+				<div>
+					<a href="#" class="watch-now">Watch Now</a>
+				</div>
+				<!--end Ticket-->
+
 				<div class="col-12">
 					<div class="details__wrap">
 						<!-- availables -->
@@ -172,12 +413,6 @@
 							</ul>
 						</div>
 						<!-- end availables -->
-
-						<!--Ticket-->
-						<div>
-							<a href="/booking.html" class="buy-tkt">Buy tickets</a>
-					    </div>
-						<!--end Ticket-->
 
 						<!-- share -->
 						<div class="details__share">
@@ -265,7 +500,7 @@
 													<span class="comments__name">Harsh Verma</span>
 													<span class="comments__time">02.08.2018, 15:24</span>
 												</div>
-												<p class="comments__text">I cried twice while watching this masterpiece. Everything was perfect. It's heartbreaking and spectacular 🤩</p>
+												<p class="comments__text">The actor playing Pablo, had to learn Spanish from scratch before playing the role. Now thats impressive</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
@@ -284,7 +519,7 @@
 													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
-												<p class="comments__text">The end would be like this I didn't even think I couldn't stop myself I started crying😭😭😭😭😭</p>
+												<p class="comments__text">Nothing beats first 2 seasons of Narcos</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>12</button>
@@ -303,7 +538,7 @@
 													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
-												<p class="comments__text">This definitely needed a happy ending!! will take at least a week to recover lol</p>
+												<p class="comments__text">I know Pablo was a pretty bad dude overall, but they really make it hard for you to hate him in this show.</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>99</button>
@@ -337,28 +572,38 @@
 											<li class="reviews__item">
 												<div class="reviews__autor">
 													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
-													<span class="reviews__name">Great Movie🔥🔥🔥🔥</span>
+													<span class="reviews__name">It's going to be ''The Hit'' . Beautiful after 3 episodes .</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.5</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>10.0</span>
 												</div>
-												<p class="reviews__text">shiddat is an emotion.
-                                                    jaggi is that character who speaks to you! 
+												<p class="reviews__text">It's beautiful , this's the way TV-series should be directed and produced, i loved the fast pace of the series from the first minute till now i haven't skipped anything or felt bored.
+
+                                                    The narration way of the story from the first beginning adds another depth to the story.
                                                     
-                                                    Sunny Kaushal and his honest charm elevated by Radhika Madan, Mohit Raina & diana penty’s performances
+                                                    It shows you scenes from the future then gets to the present to elaborate how we reached that point .
                                                     
-                                                    The catching scene was when Jaggu is almost there to meet with kartika, still he said to her, I have crossed 10000 km but you have to cross more than that as you have Mom Dad Uncle Aunty that Karan also, so if you want you can drop out here as well..... That means it clearly shows Love is beyond everything.... </p>
+                                                    The cast is great , probably you haven't seen anyone of them before , but sure as hell they can act , they are able to deliver the feeling they have so you can interact with them .
+                                                    
+                                                    Simply , a masterpiece .
+                                                    
+                                                    P.S : Netflix has always been picky about its series, that''s why it's my favorite network.
+                                                    
+                                                    </p>
 											</li>
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
 													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
-                                                    <span class="reviews__name">Loved to watch Radhika Madan and Sunny Kaushal😍😍😍❤️😍😍😍</span>
+                                                    <span class="reviews__name">A dramatized account of the rise and fall of the Colombian drug cartels</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>10.0</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>7.0</span>
 												</div>
-												<p class="reviews__text">This movie is really a one boy show and he is jaggi ( Sunny kaushal ) what a terrific performance by him really what an outstanding performance 😍😍😍❤️😍😍😍😍😍🔥🔥🔥 and his punjabi accent really suits him sunny kaushal u and your brother Vicky kaushal both are talented and sunny kaushal deserves to get Big and intresting bollywood movie and performance by Mohit Raina was simply brilliant and how cute he looked in his role saari ladkiyaan fida ho jayenge inko dekhkar 😍😍😍😍❤️❤️❤️❤️❤️ and radhika madan before u have impressed me in ray series spotlight episode cameo in this movie u were so cute and beautiful and brilliant performance and diana penty I miss you so much after cocktail and happy bhag jayegi ur such a talented actress. Direction by Kunal Deshmukh was really beautiful ❤️❤️❤️😍😍😍 location was really great to watch and song's and music are so amazing especially shiddat title track I'm in loop to listen this song And story was simple but performance by every one was main positive point of this movie and screenplay in 2nd half movie shouldn't get so long 20 minutes could be less and end this movie but ending was really heartbreaking and heart touching and madness in love ❤️❤️❤️❤️🖤🖤 immigration scenes were not wroth for the movie that much . Overall this movie is made for every romantic movie lovers only not everyone 😜 </p>
+												<p class="reviews__text">This Netflix series charts the rise and fall of the Colombian drug lords as their power increases as they earn billions of US dollars supplying the United States with cocaine and the actions of the DEA as they try to bring them to justice. The first two seasons are centred on Pablo Escobar and his Medellin cartel and DEA Agents Steve Murphy and Javier Peña while the third sees Peña leading the hunt for the 'Gentlemen of Cali', the cartel which eventually took over from Escobar.
+
+                                                    The story shown is based on reality but the makers never pretend that it is entirely true... a pre-title card informs us that some characters are entirely fictional. That doesn't stop it feeling real thanks to the way events are depicted. The characters are shown in a matter of fact way leaving it to the viewer to judge them... of course given what we see some of them do it isn't hard to condemn many of them. Even so surprisingly few characters are totally unsympathetic at all times. The cast does a really impressive job bringing their characters to life; most obviously Pedro Pascal as Javier Peña and Wagner Moura as Pablo Escobar. Many people have commented about incorrect accents but I doubt this will be a problem for non-Spanish speakers; it was certainly better than having all characters speaking English. Overall I found the series really gripping; I'll certainly be watching 'Narcos: Mexico' soon.
+                                                    </p>
 											</li>
 										</ul>
 
@@ -383,57 +628,40 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat1.webp') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat1.webp') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos1.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat2.webp') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat2.webp') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos2.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat3.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos3.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat4.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos4.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat5.jpg') }}" itemprop="thumbnail" alt="Image description" />
-										</a>
-										n 5</figcaption>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat6.jpg') }}" itemprop="thumbnail" alt="Image description" />
-										</a>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat7.webp') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat7.webp') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos5.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -441,8 +669,16 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat8.jpeg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat8.jpeg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos6.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Narcos7.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos7.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -450,8 +686,17 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/shiddat9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/shiddat9.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Narcos8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Narcos9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Narcos9.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -477,19 +722,18 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-									<a href="Haseen.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/KotaFact2.jpg') }}" alt="">
+									<a href="KotaFactory.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+									<h3 class="card__title"><a href="/kotafactory">Kota Factory</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
-										<a href="#">Mystery</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.9</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>9.2</span>
 								</div>
 							</div>
 						</div>
@@ -499,19 +743,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
-									<a href="F9.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/moneyheist5.jpg') }}" alt="">
+									<a href="/moneyheist" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="F9.html">Fast and Furious 9</a></h3>
+									<h3 class="card__title"><a href="/moneyheist">Money Heist</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
-									    <a href="#">Adventure</a>
+									    <a href="#">Drama</a>
                                         <a href="#">Crime</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>5.2</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
 								</div>
 							</div>
 						</div>
@@ -521,18 +765,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
-									<a href="mimi.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Mirzapur2.jpg') }}" alt="">
+									<a href="Mirzapur.html" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+									<h3 class="card__title"><a href="/mirzapur">Mirzapur</a></h3>
 									<span class="card__category">
-										<a href="#">Comedy</a>
+										<a href="#">Crime</a>
 									    <a href="#">Drama</a>
+                                        <a href="#">Action</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.0</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.5</span>
 								</div>
 							</div>
 						</div>
@@ -542,18 +787,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-									<a href="Thailavi.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/FamilyMan2.jpg') }}" alt="">
+									<a href="/familyman" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Thailavi.html">Thalaivi-</a></h3>
+									<h3 class="card__title"><a href="/familyman">The Family Man</a></h3>
 									<span class="card__category">
-										<a href="#">Biography</a>
+										<a href="#">Action</a>
 										<a href="#">Drama</a>
+                                        <a href="#">Comedy</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
 								</div>
 							</div>
 						</div>
@@ -563,17 +809,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Four_More_Shorta_Please_Poster.jpg') }}" alt="">
+									<a href="/fourmoreshots" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Soorarai Pottru</a></h3>
+									<h3 class="card__title"><a href="/fourmoreshots">Four More Shots Please!</a></h3>
 									<span class="card__category">
+                                        <a href="#">Comedy</a>
 										<a href="#">Drama</a>
+                                        <a href="#">Romance</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>9.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.4</span>
 								</div>
 							</div>
 						</div>
@@ -583,19 +831,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
-									<a href="Chehre.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/squid_game.webp') }}" alt="">
+									<a href="/squidgames" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
+									<h3 class="card__title"><a href="/squidgames">Squid Games</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 										<a href="#">Mystery</a>
-										<a href="#">Thriller</a>
+										<a href="#">Action</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.7</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.2</span>
 								</div>
 							</div>
 						</div>
@@ -665,58 +913,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-
-	<!-- Root element of PhotoSwipe. Must have class pswp. -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-		<!-- Background of PhotoSwipe. 
-		It's a separate element, as animating opacity is faster than rgba(). -->
-		<div class="pswp__bg"></div>
-
-		<!-- Slides wrapper with overflow:hidden. -->
-		<div class="pswp__scroll-wrap">
-
-			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-			<!-- don't modify these 3 pswp__item elements, data is added later on. -->
-			<div class="pswp__container">
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-			</div>
-
-			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-			<div class="pswp__ui pswp__ui--hidden">
-
-				<div class="pswp__top-bar">
-
-					<!--  Controls are self-explanatory. Order can be changed. -->
-
-					<div class="pswp__counter"></div>
-
-					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-					<!-- Preloader -->
-					<div class="pswp__preloader">
-						<div class="pswp__preloader__icn">
-							<div class="pswp__preloader__cut">
-								<div class="pswp__preloader__donut"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-
-				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- JS -->
 	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>

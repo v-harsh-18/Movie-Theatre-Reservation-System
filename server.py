@@ -13,6 +13,7 @@ import models.display as display
 import models.booking as booking
 from flask_mail import *
 import datetime
+import math
 
 app=Flask(__name__)
 app.secret_key = 'secret'
@@ -159,8 +160,20 @@ app.add_url_rule('/shershah', view_func=display.shershah, methods=['GET'])
 app.add_url_rule('/shiddat', view_func=display.shiddat, methods=['GET'])
 app.add_url_rule('/soorarai', view_func=display.soorarai, methods=['GET'])
 app.add_url_rule('/thailavi', view_func=display.thailavi, methods=['GET'])
-app.add_url_rule('/confirmation', view_func=display.confirmation, methods=['GET'])
- 
+app.add_url_rule('/confirmation', view_func=display.confirmation, methods=['GET']) 
 app.add_url_rule('/book', view_func=booking.booked, methods=['POST'])
+app.add_url_rule('/confirmation', view_func=booking.timings, methods=['POST'])
+app.add_url_rule('/dark', view_func=display.dark, methods=['GET']) 
+app.add_url_rule('/familyman', view_func=display.familyman, methods=['GET']) 
+app.add_url_rule('/fourmoreshots', view_func=display.fourmoreshots, methods=['GET']) 
+app.add_url_rule('/kotafactory', view_func=display.kotafactory, methods=['GET']) 
+app.add_url_rule('/mirzapur', view_func=display.mirzapur, methods=['GET']) 
+app.add_url_rule('/moneyheist', view_func=display.moneyheist, methods=['GET']) 
+app.add_url_rule('/narcos', view_func=display.narcos, methods=['GET']) 
+app.add_url_rule('/patallok', view_func=display.patallok, methods=['GET']) 
+app.add_url_rule('/sacredgames', view_func=display.sacredgames, methods=['GET']) 
+app.add_url_rule('/scam', view_func=display.scam, methods=['GET']) 
+app.add_url_rule('/squidgames', view_func=display.squidgames, methods=['GET']) 
+app.add_url_rule('/theoriginals', view_func=display.theoriginals, methods=['GET']) 
 
 app.run(debug=True)

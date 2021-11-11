@@ -12,7 +12,57 @@
   <title>Cine Show | Confirmation</title> 
  </head> 
  <body>
- 
+  
+      <header class="header">
+		<div class="header__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__content">
+							<!-- header logo -->
+							<a href="/" class="header__logo">
+								<img src="{{ url_for('static', filename='img/CineShow.png') }}" alt="">
+							</a>
+							<!-- end header logo -->
+
+							<!-- header nav -->
+							<ul class="header__nav">
+								<li class="header__nav-item">
+									<a href="/" class="header__nav-link">Home</a>
+								</li>
+								<!-- end dropdown -->
+
+								<li class="header__nav-item">
+									<a href="/pricing" class="header__nav-link">Pricing Plan</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="/faq" class="header__nav-link">Help</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="/about" class="header__nav-link">About</a>
+								</li>
+							</ul>
+							<!-- end header nav -->
+
+							<!-- header auth -->
+							<div class="header__auth">
+
+
+								<a href="/login" class="header__sign-in">
+									<i class="icon ion-ios-log-in"></i>
+									<span>sign in</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+      
   <div class="container">
     <img src="{{ url_for('static', filename='./img/popcorn-svgrepo-com.svg') }}" alt="popcorn-img" class="confirmation__img">
    <span class="text1">Congratulations! </span> 
@@ -20,6 +70,62 @@
    <span><a href="/" class="redirect-btn">Back to homepage</a></span>
   </div> 
   <canvas id="ujjwal"></canvas>
+
+  <footer class="footer">
+	<div class="container">
+		<div class="row">
+			<!-- footer list -->
+			<div class="col-12 col-md-3">
+				<h6 class="footer__title">Download Our App</h6>
+				<ul class="footer__app">
+					<li><a href="#"><img src="{{ url_for('static', filename='img/Download_on_the_App_Store_Badge.svg') }}" alt=""></a></li>
+					<li><a href="#"><img src="{{ url_for('static', filename='img/google-play-badge.png') }}" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- end footer list -->
+
+			<!-- footer list -->
+			<div class="col-6 col-sm-4 col-md-3">
+				<h6 class="footer__title">Resources</h6>
+				<ul class="footer__list">
+					<li><a href="/about">About Us</a></li>
+					<li><a href="/pricing">Pricing Plan</a></li>
+					<li><a href="/faq">Help</a></li>
+				</ul>
+			</div>
+			<!-- end footer list -->
+
+			<!-- footer list -->
+			<div class="col-6 col-sm-4 col-md-3">
+				<h6 class="footer__title">Legal</h6>
+				<ul class="footer__list">
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Security</a></li>
+				</ul>
+			</div>
+			<!-- end footer list -->
+
+			<!-- footer list -->
+			<div class="col-12 col-sm-4 col-md-3">
+				<h6 class="footer__title">Contact</h6>
+				<ul class="footer__list">
+					<li><a href="tel:+91 9011675787">+91 9011675787</a></li>
+					<li><a href="mailto:cse2000001028@iiti.ac.in">support@CineShow.com</a></li>
+				</ul>
+				<ul class="footer__social">
+					<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+					<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+					<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+					<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+				</ul>
+			</div>
+			<!-- end footer list -->
+
+			
+		</div>
+	</div>
+</footer>
   <script src="{{ url_for('static', filename='js/confirmation.js') }}"></script> 
  
  </body>

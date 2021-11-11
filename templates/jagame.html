@@ -39,7 +39,7 @@
 					<div class="col-12">
 						<div class="header__content">
 							<!-- header logo -->
-							<a href="index.html" class="header__logo">
+							<a href="/" class="header__logo">
 								<img src="{{ url_for('static', filename='img/CineShow.png') }}" alt="">
 							</a>
 							<!-- end header logo -->
@@ -47,18 +47,7 @@
 							<!-- header nav -->
 							<ul class="header__nav">
 								<li class="header__nav-item">
-									<a href="index.html" class="header__nav-link">Home</a>
-								</li>
-
-								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
-
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-										<li><a href="/catalog1">Catalog Grid</a></li>
-										<li><a href="/catalog2">Catalog List</a></li>
-										<li><a href="F9.html">Details Movie</a></li>
-										<li><a href="details2.html">Details TV Series</a></li>
-									</ul>
+									<a href="/" class="header__nav-link">Home</a>
 								</li>
 								<!-- end dropdown -->
 
@@ -78,43 +67,19 @@
 
 							<!-- header auth -->
 							<div class="header__auth">
-							
+
 
 								<a href="/login" class="header__sign-in">
 									<i class="icon ion-ios-log-in"></i>
 									<span>sign in</span>
 								</a>
 							</div>
-							<!-- end header auth -->
-
-							<!-- header menu btn -->
-							<button class="header__btn" type="button">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-							<!-- end header menu btn -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- header search -->
-		<form action="#" class="header__search">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="header__search-content">
-							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
-
-							<button type="button">search</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</form>
-		<!-- end header search -->
 	</header>
 	<!-- end header -->
 
@@ -716,9 +681,9 @@
 				<div class="col-6 col-sm-4 col-md-3">
 					<h6 class="footer__title">Resources</h6>
 					<ul class="footer__list">
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Pricing Plan</a></li>
-						<li><a href="#">Help</a></li>
+						<li><a href="/about">About Us</a></li>
+						<li><a href="/pricing">Pricing Plan</a></li>
+						<li><a href="/faq">Help</a></li>
 					</ul>
 				</div>
 				<!-- end footer list -->
@@ -738,8 +703,8 @@
 				<div class="col-12 col-sm-4 col-md-3">
 					<h6 class="footer__title">Contact</h6>
 					<ul class="footer__list">
-						<li><a href="tel:+919011675787">+91 9011675787</a></li>
-						<li><a href="mailto:cse200001028@iiti.ac.in">support@CineShow.com</a></li>
+						<li><a href="tel:+91 9011675787">+91 9011675787</a></li>
+						<li><a href="mailto:cse2000001028@iiti.ac.in">support@CineShow.com</a></li>
 					</ul>
 					<ul class="footer__social">
 						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
@@ -750,6 +715,7 @@
 				</div>
 				<!-- end footer list -->
 
+				
 			</div>
 		</div>
 	</footer>

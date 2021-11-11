@@ -122,3 +122,42 @@ def thailavi():
 
 def confirmation():
     return render_template('confirmation.html')
+
+def dark():
+    return render_template('dark.html')    
+
+def moneyheist():
+    return render_template('moneyheist.html')   
+
+def mirzapur():
+    return render_template('mirzapur.html')       
+
+def familyman():
+    return render_template('familyman.html')   
+
+def squidgames():
+    return render_template('squidgames.html')  
+
+def narcos():
+    return render_template('narcos.html')      
+
+def theoriginals():
+    return render_template('theoriginals.html')     
+
+def kotafactory():
+    return render_template('kotafactory.html')       
+
+def sacredgames():
+    return render_template('sacredgames.html')        
+
+def patallok():
+    return render_template('patallok.html')         
+
+def fourmoreshots():
+    return render_template('fourmoreshots.html')      
+
+def scam():
+    return render_template('scam.html')  
+
+
+

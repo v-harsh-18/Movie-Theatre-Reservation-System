@@ -39,7 +39,7 @@
 					<div class="col-12">
 						<div class="header__content">
 							<!-- header logo -->
-							<a href="index.html" class="header__logo">
+							<a href="/" class="header__logo">
 								<img src="{{ url_for('static', filename='img/CineShow.png') }}" alt="">
 							</a>
 							<!-- end header logo -->
@@ -47,18 +47,7 @@
 							<!-- header nav -->
 							<ul class="header__nav">
 								<li class="header__nav-item">
-									<a href="index.html" class="header__nav-link">Home</a>
-								</li>
-
-								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
-
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-										<li><a href="/catalog1">Catalog Grid</a></li>
-										<li><a href="/catalog2">Catalog List</a></li>
-										<li><a href="F9.html">Details Movie</a></li>
-										<li><a href="details2.html">Details TV Series</a></li>
-									</ul>
+									<a href="/" class="header__nav-link">Home</a>
 								</li>
 								<!-- end dropdown -->
 
@@ -85,36 +74,12 @@
 									<span>sign in</span>
 								</a>
 							</div>
-							<!-- end header auth -->
-
-							<!-- header menu btn -->
-							<button class="header__btn" type="button">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-							<!-- end header menu btn -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- header search -->
-		<form action="#" class="header__search">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="header__search-content">
-							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
-
-							<button type="button">search</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</form>
-		<!-- end header search -->
 	</header>
 	<!-- end header -->
 
@@ -122,7 +87,7 @@
 	<section class="home">
 		<!-- home bg -->
 		<div class="owl-carousel home__bg">
-			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/f9hdbg.jpg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/f9hdbg.jpg') }}" ></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/mimi.webp') }}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/thalaivihdbg.jpg') }}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/haseendilrubahdbg.jpg') }}"></div>
@@ -155,12 +120,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
-									<a href="F9.html" class="card__play">
+									<a href="/f9" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 						    	</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="F9.html">Fast and Furious 9</a></h3>
+									<h3 class="card__title"><a href="/f9">Fast and Furious 9</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Adventure</a>
@@ -177,12 +142,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
-									<a href="mimi.html" class="card__play">
+									<a href="/mimi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+									<h3 class="card__title"><a href="/mimi">Mimi</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -198,12 +163,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-									<a href="Thailavi.html" class="card__play">
+									<a href="/thailavi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Thailavi.html">Thalaivii</a></h3>
+									<h3 class="card__title"><a href="/thailavi">Thalaivii</a></h3>
 									<span class="card__category">
 										<a href="#">Biography</a>
 										<a href="#">Drama</a>
@@ -219,12 +184,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-									<a href="Haseen.html" class="card__play">
+									<a href="/haseen" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+									<h3 class="card__title"><a href="/haseen">Haseen Dillruba</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
@@ -241,12 +206,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Sherni.jpg') }}" alt="">
-									<a href="Sherni.html" class="card__play">
+									<a href="/sherni" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Sherni.html">Sherni</a></h3>
+									<h3 class="card__title"><a href="/sherni">Sherni</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Adventure</a>
@@ -263,12 +228,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Jagame_Thandhiram.jpg') }}" alt="">
-									<a href="Jagame.html" class="card__play">
+									<a href="/jagame" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Jagame.html">Jagame Thandhiram</a></h3>
+									<h3 class="card__title"><a href="/jagame">Jagame Thandhiram</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Crime</a>
@@ -285,12 +250,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Saina.jpg') }}" alt="">
-									<a href="Saina.html" class="card__play">
+									<a href="/saina" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Saina.html">Saina</a></h3>
+									<h3 class="card__title"><a href="/saina">Saina</a></h3>
 									<span class="card__category">
 										<a href="#">Biography</a>
 										<a href="#">Drama</a>
@@ -307,12 +272,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Coolie_No._1.jpg') }}" alt="">
-									<a href="Collie.html" class="card__play">
+									<a href="/collie" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Collie.html">Coolie No. 1</a></h3>
+									<h3 class="card__title"><a href="/collie">Coolie No. 1</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -328,12 +293,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/The-Conjuring-The-Devil-Made-Me-Do-It.jpg') }}" alt="">
-									<a href="Conjuring.html" class="card__play">
+									<a href="/conjuring" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Conjuring.html">The The Conjuring: The Devil Made Me Do It</a></h3>
+									<h3 class="card__title"><a href="/conjuring">The The Conjuring: The Devil Made Me Do It</a></h3>
 									<span class="card__category">
 										<a href="#">Horror</a>
 										<a href="#">Mystery</a>
@@ -350,12 +315,12 @@
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
-									<a href="Soorarai.html" class="card__play">
+									<a href="/soorarai" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Soorarai.html">Soorarai Pottru</a></h3>
+									<h3 class="card__title"><a href="/soorarai">Soorarai Pottru</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 									</span>
@@ -432,7 +397,7 @@
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
 											<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
-											<a href="Chehre.html" class="card__play">
+											<a href="/chehre" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
 										</div>
@@ -440,7 +405,7 @@
 
 									<div class="col-12 col-sm-8">
 										<div class="card__content">
-											<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
+											<h3 class="card__title"><a href="/chehre">Chehre</a></h3>
 											<span class="card__category">
 												<a href="#">Drama</a>
 												<a href="#">Mystery</a>
@@ -473,7 +438,7 @@
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
 											<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
-											<a href="mimi.html" class="card__play">
+											<a href="/mimi" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
 										</div>
@@ -481,7 +446,7 @@
 
 									<div class="col-12 col-sm-8">
 										<div class="card__content">
-											<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+											<h3 class="card__title"><a href="/mimi">Mimi</a></h3>
 											<span class="card__category">
 												<a href="#">Comedy</a>
 									            <a href="#">Drama</a>
@@ -513,7 +478,7 @@
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
 											<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-											<a href="Thailavi.html" class="card__play">
+											<a href="/thailavi" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
 										</div>
@@ -521,7 +486,7 @@
 
 									<div class="col-12 col-sm-8">
 										<div class="card__content">
-											<h3 class="card__title"><a href="Thailavi.html">Thalaivii</a></h3>
+											<h3 class="card__title"><a href="/thailavi">Thalaivii</a></h3>
 											<span class="card__category">
 												<a href="#">Biography</a>
 												<a href="#">Drama</a>
@@ -554,7 +519,7 @@
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
 											<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-											<a href="Haseen.html" class="card__play">
+											<a href="/haseen" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
 										</div>
@@ -562,7 +527,7 @@
 
 									<div class="col-12 col-sm-8">
 										<div class="card__content">
-											<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+											<h3 class="card__title"><a href="/haseen">Haseen Dillruba</a></h3>
 											<span class="card__category">
 												<a href="#">Crime</a>
 												<a href="#">Drama</a>
@@ -595,7 +560,7 @@
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
 											<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
-											<a href="Soorarai.html" class="card__play">
+											<a href="/soorarai" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
 										</div>
@@ -603,7 +568,7 @@
 
 									<div class="col-12 col-sm-8">
 										<div class="card__content">
-											<h3 class="card__title"><a href="Soorarai.html">Soorarai Pottru</a></h3>
+											<h3 class="card__title"><a href="/soorarai">Soorarai Pottru</a></h3>
 											<span class="card__category">
 												<a href="#">Drama</a>
 											</span>
@@ -634,7 +599,7 @@
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
 											<img src="{{ url_for('static', filename='img/covers/Bell bottom.jpg') }}" alt="">
-											<a href="Bell.html" class="card__play">
+											<a href="/bell" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
 										</div>
@@ -642,7 +607,7 @@
 
 									<div class="col-12 col-sm-8">
 										<div class="card__content">
-											<h3 class="card__title"><a href="Bell.html">Bell Bottom</a></h3>
+											<h3 class="card__title"><a href="/bell">Bell Bottom</a></h3>
 											<span class="card__category">
 												<a href="#">Action</a>
 												<a href="#">Thriller</a>
@@ -676,12 +641,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/shershahpp.jpg') }}" alt="">
-									<a href="Shershah.html" class="card__play">
+									<a href="/shershah" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Shershah.html">Shershah</a></h3>
+									<h3 class="card__title"><a href="/shershah">Shershah</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Biography</a>
@@ -698,12 +663,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Bhuj.jpg') }}" alt="">
-									<a href="Bhuj.html" class="card__play">
+									<a href="/bhuj" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Bhuj.html">Bhuj: The Pride of India</a></h3>
+									<h3 class="card__title"><a href="/bhuj">Bhuj: The Pride of India</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 									    <a href="#">Drama</a>
@@ -720,12 +685,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Hungama2.jpg') }}" alt="">
-									<a href="hungama2.html" class="card__play">
+									<a href="/hungama2" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="hungama2.html">Hungama 2</a></h3>
+									<h3 class="card__title"><a href="/hungama2">Hungama 2</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -740,12 +705,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Radhe.jpg') }}" alt="">
-									<a href="Radhe.html" class="card__play">
+									<a href="/radhe" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Radhe.html">Radhe</a></h3>
+									<h3 class="card__title"><a href="/radhe">Radhe</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Action</a>
@@ -762,12 +727,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Shiddat.jpg') }}" alt="">
-									<a href="Shiddat.html" class="card__play">
+									<a href="/shiddat" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Shiddat.html">Shiddat</a></h3>
+									<h3 class="card__title"><a href="/shiddat">Shiddat</a></h3>
 									<span class="card__category">
 										<a href="#">Romance</a>
 									</span>
@@ -782,12 +747,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/MumbaiSaga.jpg') }}" alt="">
-									<a href="MumbaiSaga.html" class="card__play">
+									<a href="/mumbaisaga" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="MumbaiSaga.html">Mumbai Saga</a></h3>
+									<h3 class="card__title"><a href="/mumbaisaga">Mumbai Saga</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Crime</a>
@@ -803,12 +768,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Ludo.jpg') }}" alt="">
-									<a href="Ludo.html" class="card__play">
+									<a href="/ludo" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Ludo.html">Ludo</a></h3>
+									<h3 class="card__title"><a href="/ludo">Ludo</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Comedy</a>
@@ -825,12 +790,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Roohi.jpg') }}" alt="">
-									<a href="Roohi.html" class="card__play">
+									<a href="/roohi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Roohi.html">Roohi</a></h3>
+									<h3 class="card__title"><a href="/roohi">Roohi</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 										<a href="#">Horror</a>
@@ -851,7 +816,7 @@
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Hello Charlie</a></h3>
+									<h3 class="card__title"><a href="/hellocharlie">Hello Charlie</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -871,7 +836,7 @@
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Indoo ki Jawani</a></h3>
+									<h3 class="card__title"><a href="/indoo">Indoo ki Jawani</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -935,12 +900,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/KotaFact2.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/kotafactory" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Kota Factory 2</a></h3>
+									<h3 class="card__title"><a href="/kotafactory">Kota Factory</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -956,12 +921,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/moneyheist5.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/moneyheist" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Money Heist 5</a></h3>
+									<h3 class="card__title"><a href="/moneyheist">Money Heist</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 										<a href="#">Action</a>
@@ -978,12 +943,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Poster_of_Mirzapur_2018.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/mirzapur" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Mirzapur 2</a></h3>
+									<h3 class="card__title"><a href="/mirzapur">Mirzapur</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
@@ -1000,12 +965,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/FamilyMan2.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/familyman" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">The Family Man 2</a></h3>
+									<h3 class="card__title"><a href="/familyman">The Family Man</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Drama</a>
@@ -1021,19 +986,19 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Lucifer.jpeg') }}" alt="">
-									<a href="#" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Four_More_Shorta_Please_Poster.jpg') }}" alt="">
+									<a href="/fourmoreshots" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Lucifer</a></h3>
+									<h3 class="card__title"><a href="/fourmoreshots">Four More Shots Please!</a></h3>
 									<span class="card__category">
-										<a href="#">Crime</a>
+										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
-										<a href="#">Fantasy</a>
+										<a href="#">Romance</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.1</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.4</span>
 								</div>
 							</div>
 						</div>
@@ -1044,12 +1009,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/squid_game.webp') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/squidgames" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Squid Games</a></h3>
+									<h3 class="card__title"><a href="/squidgames">Squid Games</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Mystery</a>
@@ -1065,20 +1030,19 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/tvd.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Narcos.png') }}" alt="">
+									<a href="/narcos" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">The Vampire Diaries</a></h3>
+									<h3 class="card__title"><a href="/narcos">Narcos</a></h3>
 									<span class="card__category">
-										<a href="#">Romance</a>
-										<a href="#">Horror</a>
+										<a href="#">Biography</a>
+										<a href="#">Crime</a>
 										<a href="#">Drama</a>
-										<a href="#">Supernatural</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.7</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.8</span>
 								</div>
 							</div>
 						</div>
@@ -1089,12 +1053,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/TO.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/theoriginals" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">The Orignals</a></h3>
+									<h3 class="card__title"><a href="/theoriginals">The Originals</a></h3>
 									<span class="card__category">
 										<a href="#">Horror</a>
 										<a href="#">Fantasy</a>
@@ -1111,12 +1075,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Dark.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/dark" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Dark</a></h3>
+									<h3 class="card__title"><a href="/dark">Dark</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
@@ -1133,12 +1097,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Sacredgames.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/sacredgames" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Sacred Games</a></h3>
+									<h3 class="card__title"><a href="/sacredgames">Sacred Games</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Crime</a>
@@ -1155,12 +1119,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Scam.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/scam" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Scam 1992</a></h3>
+									<h3 class="card__title"><a href="/scam">Scam 1992</a></h3>
 									<span class="card__category">
 										<a href="#">Biography</a>
 										<a href="#">Drama</a>
@@ -1177,275 +1141,18 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/paatal lok.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/patallok" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Paatal Lok</a></h3>
+									<h3 class="card__title"><a href="/patallok">Paatal Lok</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
 										<a href="#">Thriller</a>
 									</span>
 									<span class="card__rate"><i class="icon ion-ios-star"></i>7.8</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-					</div>
-				</div>
-
-				<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
-					<div class="row">
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/House_of_the_Dragon_logo.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">House Of The Dragons</a></h3>
-									<span class="card__category">
-										<a href="#">Action</a>
-										<a href="#">Adventure</a>
-										<a href="#">Drama</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>--</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Benched</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover2.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Whitney</a></h3>
-									<span class="card__category">
-										<a href="#">Romance</a>
-										<a href="#">Drama</a>
-										<a href="#">Music</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover6.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
-										<a href="#">Drama</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-									<span class="card__category">
-										<a href="#">Action</a>
-										<a href="#">Triler</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover5.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Benched</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover6.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Whitney</a></h3>
-									<span class="card__category">
-										<a href="#">Romance</a>
-										<a href="#">Drama</a>
-										<a href="#">Music</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover5.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
-										<a href="#">Drama</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-									<span class="card__category">
-										<a href="#">Action</a>
-										<a href="#">Triler</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Benched</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/cover2.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Whitney</a></h3>
-									<span class="card__category">
-										<a href="#">Romance</a>
-										<a href="#">Drama</a>
-										<a href="#">Music</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
-								</div>
-							</div>
-						</div>
-						<!-- end card -->
-
-						<!-- card -->
-						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-							<div class="card">
-								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
-									<a href="#" class="card__play">
-										<i class="icon ion-ios-play"></i>
-									</a>
-								</div>
-								<div class="card__content">
-									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
-									<span class="card__category">
-										<a href="#">Comedy</a>
-										<a href="#">Drama</a>
-									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
 								</div>
 							</div>
 						</div>
@@ -1650,9 +1357,9 @@
 				<div class="col-6 col-sm-4 col-md-3">
 					<h6 class="footer__title">Resources</h6>
 					<ul class="footer__list">
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Pricing Plan</a></li>
-						<li><a href="#">Help</a></li>
+						<li><a href="/about">About Us</a></li>
+						<li><a href="/pricing">Pricing Plan</a></li>
+						<li><a href="/faq">Help</a></li>
 					</ul>
 				</div>
 				<!-- end footer list -->
