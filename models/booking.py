@@ -48,59 +48,53 @@ def timings():
 
     if request.method=='POST':
         title=request.form['title']
-        print(title)
+        date=request.form['date']
+        print(date)
 
         query='''
-        SELECT reservation.showing.idShowing, reservation.theatre_complex.name, reservation.theatre_complex.address, reservation.theatre_complex.phone_number,reservation.showing.start_time,showing.date_played
+        SELECT reservation.showing.idShowing, reservation.theatre_complex.name, reservation.theatre_complex.address, reservation.theatre_complex.phone_number,reservation.showing.start_time,showing.date_played,reservation.showing.theatre_id,reservation.showing.Theatre_screen_id
         FROM reservation.showing
         JOIN reservation.theatre_complex
         ON reservation.showing.theatre_id=reservation.theatre_complex.theatre_id
-        WHERE reservation.showing.Movie_Title=%s
+        WHERE reservation.showing.Movie_Title=%s AND reservation.showing.date_played=%s
         ORDER BY reservation.theatre_complex.name;
         '''
 
         cursor = mysql.connection.cursor()
-        cursor.execute(query,[title])
+        cursor.execute(query,[title,date])
         input=cursor.fetchall()
         cursor.close()
 
         theatre=()
         temp1=()
         temp2=set()
-        temp3=set()
         tval=0
         length=len(input)
 
         for i in range(0,length):
          if(i==0):
-          temp1=(input[i][1],input[i][2],input[i][3])
+          temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
           temp2.add(input[i][4])
-          temp3.add(input[i][5])
 
          elif(input[i][1]==temp1[0]):
             temp2.add(input[i][4])
-            temp3.add(input[i][5])
 
          else:
              if(tval==0):
               temp1+=(temp2,)
-              temp1+=(temp3,)
               theatre=(temp1)
               tval=1
 
 
              else: 
               temp1+=(temp2,)
-              temp1+=(temp3,)
               theatre=((theatre,)+(temp1,))
 
-             temp1=(input[i][1],input[i][2],input[i][3])
+             temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
              temp2={input[i][4]}
-             temp3={input[i][5]}
 
 
              temp1+=(temp2,)
-             temp1+=(temp3,)
              theatre=((theatre,)+(temp1,))  
 
         print(theatre)    
@@ -117,8 +111,14 @@ def timings():
 def booking():
     login_is_required
 
-    idshowing='Mimi0001121110513'
-    title='Mimi'
+    title=request.form['title']
+    theatre=request.form['theatre']
+    screen=request.form['screen']
+    time=request.form['time']
+    date=request.form['date']
+
+    idshowing=title+theatre+screen+date[2]+date[3]+date[5]+date[6]+date[8]+date[9]+time[0]+time[1]
+    print(idshowing)
 
     query='''
     SELECT seat 

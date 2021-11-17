@@ -87,10 +87,10 @@
 	<section class="home">
 		<!-- home bg -->
 		<div class="owl-carousel home__bg">
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg1.jpg')}}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg4.jpg')}}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg2.jpg')}}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg3.jpg')}}"></div>
-			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg1.jpg')}}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg5.jpg')}}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg6.jpg')}}"></div>
 			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/bg/bg7.jpg')}}"></div>
@@ -116,8 +116,12 @@
 				<div class="col-12">
 					<div class="owl-carousel home__carousel">
 						{%for complex in theatre%}
+						<form method="POST" action="/booking">
 						<div class="item">
 							<!-- card -->
+							<input type="text" style="display: none;" value="{{title}}" name="title">
+							<input type="text" style="display: none;" value="{{complex[3]}}" name="theatre">
+							<input type="text" style="display: none;" value="{{complex[4]}}" name="screen">
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/home/pvr.png')}}" alt="">
@@ -133,8 +137,8 @@
 									<span class="card__rate"><i class="icon ion-ios-call"></i>{{complex[2]}}</span>
 									<div class="dropdown">
 										<label><span class="card__rate">Timings</span></label>  
-                                        <select>  
-											{%for time in complex[3]%}
+                                        <select name="time">  
+											{%for time in complex[5]%}
                                         <option value = "{{time}}"> {{time}}   
                                         </option>  
 										{%endfor%}
@@ -143,17 +147,22 @@
 									  
 								<div class="dropdown">
 									<label><span class="card__rate">Date</span></label>  
-									<select>  
-										{%for date in complex[4]%}
-									<option value = "{{time}}"> {{date}}   
+									<select name="date">  
+										{%for date in complex[6]%}
+									<option value = "{{date}}"> {{date}}   
 									</option>  
 									{%endfor%}
 									</select>  
 								  </div>
 								</div>
 							</div>
+							<div class="sign__group">
+								<input type="date" class="sign__input" placeholder="Password">
+							</div>
+							<button type="submit" class="buy-tkt">Buy tickets</button>
 							<!-- end card -->
 						</div>
+					</form>
                         {%endfor%}
 						
 
