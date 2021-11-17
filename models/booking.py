@@ -9,8 +9,6 @@ import os
 import requests
 import pathlib
 from werkzeug.utils import secure_filename, send_file
-import models.display as display
-import models.booking as bookin
 from flask_mail import *
 import datetime
 import math
@@ -52,7 +50,68 @@ def timings():
         title=request.form['title']
         print(title)
 
-    return redirect('/booking')    
+        query='''
+        SELECT reservation.showing.idShowing, reservation.theatre_complex.name, reservation.theatre_complex.address, reservation.theatre_complex.phone_number,reservation.showing.start_time,showing.date_played
+        FROM reservation.showing
+        JOIN reservation.theatre_complex
+        ON reservation.showing.theatre_id=reservation.theatre_complex.theatre_id
+        WHERE reservation.showing.Movie_Title=%s
+        ORDER BY reservation.theatre_complex.name;
+        '''
+
+        cursor = mysql.connection.cursor()
+        cursor.execute(query,[title])
+        input=cursor.fetchall()
+        cursor.close()
+
+        theatre=()
+        temp1=()
+        temp2=set()
+        temp3=set()
+        tval=0
+        length=len(input)
+
+        for i in range(0,length):
+         if(i==0):
+          temp1=(input[i][1],input[i][2],input[i][3])
+          temp2.add(input[i][4])
+          temp3.add(input[i][5])
+
+         elif(input[i][1]==temp1[0]):
+            temp2.add(input[i][4])
+            temp3.add(input[i][5])
+
+         else:
+             if(tval==0):
+              temp1+=(temp2,)
+              temp1+=(temp3,)
+              theatre=(temp1)
+              tval=1
+
+
+             else: 
+              temp1+=(temp2,)
+              temp1+=(temp3,)
+              theatre=((theatre,)+(temp1,))
+
+             temp1=(input[i][1],input[i][2],input[i][3])
+             temp2={input[i][4]}
+             temp3={input[i][5]}
+
+
+             temp1+=(temp2,)
+             temp1+=(temp3,)
+             theatre=((theatre,)+(temp1,))  
+
+        print(theatre)    
+        return render_template('list.html',theatre=theatre, title=title)   
+
+    else:
+        dict={}
+        dict['hemlo']='ji'
+        print(dict)    
+
+    return render_template('list.html')    
 
 
 def booking():
