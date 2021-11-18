@@ -8,60 +8,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+	<!-- Favicons -->
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
   <link rel="stylesheet" href="{{ url_for('static', filename='./css/confirmation.css') }}">
   <title>Cine Show | Confirmation</title> 
  </head> 
  <body>
   
-      <header class="header">
-		<div class="header__wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="header__content">
-							<!-- header logo -->
-							<a href="/" class="header__logo">
-								<img src="{{ url_for('static', filename='img/CineShow.png') }}" alt="">
-							</a>
-							<!-- end header logo -->
-
-							<!-- header nav -->
-							<ul class="header__nav">
-								<li class="header__nav-item">
-									<a href="/" class="header__nav-link">Home</a>
-								</li>
-								<!-- end dropdown -->
-
-								<li class="header__nav-item">
-									<a href="/pricing" class="header__nav-link">Pricing Plan</a>
-								</li>
-
-								<li class="header__nav-item">
-									<a href="/faq" class="header__nav-link">Help</a>
-								</li>
-
-								<li class="header__nav-item">
-									<a href="/about" class="header__nav-link">About</a>
-								</li>
-							</ul>
-							<!-- end header nav -->
-
-							<!-- header auth -->
-							<div class="header__auth">
-
-
-								<a href="/login" class="header__sign-in">
-									<i class="icon ion-ios-log-in"></i>
-									<span>sign in</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</header>
       
   <div class="container">
     <img src="{{ url_for('static', filename='./img/popcorn-svgrepo-com.svg') }}" alt="popcorn-img" class="confirmation__img">
@@ -71,62 +39,20 @@
   </div> 
   <canvas id="ujjwal"></canvas>
 
-  <footer class="footer">
-	<div class="container">
-		<div class="row">
-			<!-- footer list -->
-			<div class="col-12 col-md-3">
-				<h6 class="footer__title">Download Our App</h6>
-				<ul class="footer__app">
-					<li><a href="#"><img src="{{ url_for('static', filename='img/Download_on_the_App_Store_Badge.svg') }}" alt=""></a></li>
-					<li><a href="#"><img src="{{ url_for('static', filename='img/google-play-badge.png') }}" alt=""></a></li>
-				</ul>
-			</div>
-			<!-- end footer list -->
 
-			<!-- footer list -->
-			<div class="col-6 col-sm-4 col-md-3">
-				<h6 class="footer__title">Resources</h6>
-				<ul class="footer__list">
-					<li><a href="/about">About Us</a></li>
-					<li><a href="/pricing">Pricing Plan</a></li>
-					<li><a href="/faq">Help</a></li>
-				</ul>
-			</div>
-			<!-- end footer list -->
-
-			<!-- footer list -->
-			<div class="col-6 col-sm-4 col-md-3">
-				<h6 class="footer__title">Legal</h6>
-				<ul class="footer__list">
-					<li><a href="#">Terms of Use</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Security</a></li>
-				</ul>
-			</div>
-			<!-- end footer list -->
-
-			<!-- footer list -->
-			<div class="col-12 col-sm-4 col-md-3">
-				<h6 class="footer__title">Contact</h6>
-				<ul class="footer__list">
-					<li><a href="tel:+91 9011675787">+91 9011675787</a></li>
-					<li><a href="mailto:cse2000001028@iiti.ac.in">support@CineShow.com</a></li>
-				</ul>
-				<ul class="footer__social">
-					<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
-					<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
-					<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
-					<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
-				</ul>
-			</div>
-			<!-- end footer list -->
-
-			
-		</div>
-	</div>
-</footer>
   <script src="{{ url_for('static', filename='js/confirmation.js') }}"></script> 
+  <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.mousewheel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/plyr.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.morelines.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/photoswipe.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/photoswipe-ui-default.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
  
  </body>
 </html>
