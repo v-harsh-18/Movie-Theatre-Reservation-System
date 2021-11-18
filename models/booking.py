@@ -65,19 +65,21 @@ def timings():
         input=cursor.fetchall()
         cursor.close()
 
+        print(input)
+
         theatre=()
         temp1=()
-        temp2=set()
+        temp2={}
         tval=0
         length=len(input)
 
         for i in range(0,length):
          if(i==0):
           temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
-          temp2.add(input[i][4])
+          temp2={input[i][0]:input[i][4]}
 
          elif(input[i][1]==temp1[0]):
-            temp2.add(input[i][4])
+            temp2[input[i][0]]=input[i][4]
 
          else:
              if(tval==0):
@@ -91,7 +93,7 @@ def timings():
               theatre=((theatre,)+(temp1,))
 
              temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
-             temp2={input[i][4]}
+             temp2={input[i][0]:input[i][4]}
 
 
              temp1+=(temp2,)
@@ -111,14 +113,8 @@ def timings():
 def booking():
     login_is_required
 
+    idshowing=request.form['idshowing']
     title=request.form['title']
-    theatre=request.form['theatre']
-    screen=request.form['screen']
-    time=request.form['time']
-    date=request.form['date']
-
-    idshowing=title+theatre+screen+date[2]+date[3]+date[5]+date[6]+date[8]+date[9]+time[0]+time[1]
-    print(idshowing)
 
     query='''
     SELECT seat 

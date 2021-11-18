@@ -120,8 +120,6 @@
 						<div class="item">
 							<!-- card -->
 							<input type="text" style="display: none;" value="{{title}}" name="title">
-							<input type="text" style="display: none;" value="{{complex[3]}}" name="theatre">
-							<input type="text" style="display: none;" value="{{complex[4]}}" name="screen">
 							<div class="card card--big">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/home/pvr.png')}}" alt="">
@@ -137,30 +135,21 @@
 									<span class="card__rate"><i class="icon ion-ios-call"></i>{{complex[2]}}</span>
 									<div class="dropdown">
 										<label><span class="card__rate">Timings</span></label>  
-                                        <select name="time">  
-											{%for time in complex[5]%}
-                                        <option value = "{{time}}"> {{time}}   
+                                        <select name="idshowing">  
+											{%for key,value in complex[5].items()%}
+                                        <option value = "{{key}}"> {{value}}   
                                         </option>  
 										{%endfor%}
                                         </select>  
 									  </div>
 									  
-								<div class="dropdown">
-									<label><span class="card__rate">Date</span></label>  
-									<select name="date">  
-										{%for date in complex[6]%}
-									<option value = "{{date}}"> {{date}}   
-									</option>  
-									{%endfor%}
-									</select>  
-								  </div>
-								</div>
-							</div>
 							<div class="sign__group">
 								<input type="date" class="sign__input" placeholder="Password">
 							</div>
 							<button type="submit" class="buy-tkt">Buy tickets</button>
 							<!-- end card -->
+						</div>
+						</div>
 						</div>
 					</form>
                         {%endfor%}
