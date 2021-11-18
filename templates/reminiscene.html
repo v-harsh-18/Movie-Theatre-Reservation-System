@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
 	<!-- Favicons -->
-	<link rel="icon"  href="{{ url_for('static', filename='con/favi.png') }}">
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -86,7 +86,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/Sainabg.jpg') }}"></div>
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/Reminiscencehdbg.jpg') }}"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -94,7 +94,7 @@
 			<div class="row">
 				<!-- title -->
 				<div class="col-12">
-					<h1 class="details__title">Saina</h1>
+					<h1 class="details__title">Reminiscence</h1>
 				</div>
 				<!-- end title -->
 
@@ -105,7 +105,7 @@
 							<!-- card cover -->
 							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Saina.jpg') }}" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Reminiscence.jpg') }}" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
@@ -114,7 +114,7 @@
 							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-7">
 								<div class="card__content">
 									<div class="card__wrap">
-										<span class="card__rate"><i class="icon ion-ios-star"></i>4.3</span>
+										<span class="card__rate"><i class="icon ion-ios-star"></i>5.9</span>
 
 										<ul class="card__list">
 											<li>HD</li>
@@ -123,14 +123,13 @@
 									</div>
 
 									<ul class="card__meta">
-										<li><span>Genre:</span> <a href="#">Biography</a><a href="#">Drama</a><a href="#">Sport</a></li>
-										<li><span>Release year:</span> 2021</li>
-										<li><span>Running time:</span> 135 min</li>
+										<li><span>Genre:</span> <a href="#">Romance</a><a href="#">Mystery</a><a href="#">Sci-fi</a></li>
+										<li><span>Running time:</span> 116 min</li>
 										<li><span>Country:</span> <a href="#">India</a> </li>
 									</ul>
 
 									<div class="card__description card__description--details">
-										Saina Nehwal, a badminton enthusiast, considers pursuing the sport full-time. When she starts training under an efficient coach, she soon becomes the best and ranks number one in the sport.
+										Nick Bannister, a private investigator of the mind, navigates the darkly alluring world of the past by helping his clients access lost memories. Living on the fringes of the sunken Miami coast, his life is forever changed as he uncovers a violent conspiracy while trying to solve the mystery behind a client who disappeared.
 									</div>
 								</div>
 							</div>
@@ -178,10 +177,10 @@
 								<input type="date" style="height: 3rem; font-size:1.15rem; width:13rem" class="sign__input buy-tkt" placeholder="Date" required name="date">
 							</div>
 							<div>
-									<input type="text" style="display: none;" value="Saina" name="title">
+									<input type="text" style="display: none;" value="Tomorrow War" name="title">
 								<button type="submit" class="buy-tkt">Buy tickets</button>
 							</div>
-						<!-- share -->
+						</form>
 						<div class="details__share">
 							<span class="details__share-title">Share with friends:</span>
 
@@ -266,8 +265,8 @@
 													<img class="comments__avatar" src="{{ url_for('static', filename='img/Harsh Verma.jpg') }}" alt="">
 													<span class="comments__name">Harsh Verma</span>
 													<span class="comments__time">02.08.2018, 15:24</span>
-								 				</div>
-												<p class="comments__text">We are sorry Saina, we are all very sorry. This is all Bollywood could do for you, not that you asked 🤧</p>
+												</div>
+												<p class="comments__text">Let's be honest we have the technology... We can edit every scene where he makes a fist and have claws come out. Throw in a little blood effects when he's fighting and boom he's back.</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>74</button>
@@ -282,54 +281,16 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="{{ url_for('static', filename='img/Pranjali.jpg') }}" alt="">
-													<span class="comments__name">Pranjali Ghavale</span>
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Aditya.jpeg') }}" alt="">
+													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
-												<p class="comments__text">The younger girl playing saina is gonna nail it!!!</p>
+												<p class="comments__text">Man every role he does is just epic</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>12</button>
 
 														<button type="button">7<i class="icon ion-md-thumbs-down"></i></button>
-													</div>
-
-													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
-													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
-												</div>
-											</li>
-
-											<li class="comments__item comments__item--answer">
-												<div class="comments__autor">
-													<img class="comments__avatar" src="{{ url_for('static', filename='img/Chaitanya.jpeg') }}" alt="">
-													<span class="comments__name">Chaitanya Dhanorkar</span>
-													<span class="comments__time">24.08.2018, 16:41</span>
-												</div>
-												<p class="comments__text">said it</p>
-												<div class="comments__actions">
-													<div class="comments__rate">
-														<button type="button"><i class="icon ion-md-thumbs-up"></i>8</button>
-
-														<button type="button">3<i class="icon ion-md-thumbs-down"></i></button>
-													</div>
-
-													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
-													<button type="button"><i class="icon ion-ios-quote"></i>Quote</button>
-												</div>
-											</li>
-
-											<li class="comments__item comments__item--quote">
-												<div class="comments__autor">
-													<img class="comments__avatar" src="{{ url_for('static', filename='img/Aditya.jpeg') }}" alt="">
-													<span class="comments__name">Aditya Deshmukh</span>
-													<span class="comments__time">11.08.2018, 11:11</span>
-												</div>
-												<p class="comments__text"><span>True</p>
-												<div class="comments__actions">
-													<div class="comments__rate">
-														<button type="button"><i class="icon ion-md-thumbs-up"></i>11</button>
-
-														<button type="button">1<i class="icon ion-md-thumbs-down"></i></button>
 													</div>
 
 													<button type="button"><i class="icon ion-ios-share-alt"></i>Reply</button>
@@ -343,7 +304,7 @@
 													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
-												<p class="comments__text">We need a biopic on Xavier. How an ordinary man became the meme sensation of India?</p>
+												<p class="comments__text">The music in this trailer is absolutely beautiful</p>
 												<div class="comments__actions">
 													<div class="comments__rate">
 														<button type="button"><i class="icon ion-md-thumbs-up"></i>99</button>
@@ -377,58 +338,31 @@
 											<li class="reviews__item">
 												<div class="reviews__autor">
 													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
-													<span class="reviews__name">Nice Movie</span>
+													<span class="reviews__name">🔥🔥🔥🔥</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>7.0</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.5</span>
 												</div>
-												<p class="reviews__text">Watched "Saina". Loved it!! How beautifully Amole Gupte once again has made a brilliant movie after "Stanley ka dabba" n "Hawa hawai". Whenever he directs,  he amazes us. The movie is all about our sports icon Saina Nehwal, a girl from Hyderabad. 
-                                                    Parineeti Chopra, though am not a big fan, she manages to charm me with this titular role. She has breathed the role. Through out the movie, the cast supports Parineeti well enough. It's a biopic n I won't give any spoiler. Manav Kaul, a special mention for him. As a strict coach, he has given his top notch performance.  He proves, he's here to stay. Once more after "Ajeeb Daastaans",he delivers a stupendous job. </p>
+												<p class="reviews__text">I absolutely adored this film, it had 2 huge stars (Hugh  jackman and Rebecca ferguson) which initially drew me in. As for the actual film, it had a very unique plot and an amazing set. The water flooding Miami was designed beautifully and the costumes they all wore were excellent. I had very video gameish vibes from this movie which made it stand out for me. The set was gorgeous and well thought out and really went well with the plot. I definitely also felt a deep admiration for the characters and felt like I could relate to some aspects, which is always good to remember when character building. It was tragic, heartbreaking, while also keeping you on your toes because you never know what’s going to happen next. A+ mystery in my opinion, so many twists and turns. Highly recommend seeing this film, will not be a waste of your time or money!</p>
 											</li>
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
 													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
-                                                    <span class="reviews__name">Inspirational Movie</span>
+                                                    <span class="reviews__name" style="color: red;"> Spoiler Alert</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>6.5</span>
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>6.0</span>
 												</div>
-												<p class="reviews__text">Though the life journey of Our Nation's pride Saina is worth watching but all the low ratings are for the bad cinematic experience. From dialogue delivery to background music, from make up to cinematography lots of editing are required.
+												<p class="reviews__text">I have a few issues with the film: Hugh Jackman's character, Nick Bannister, does not come across as likeable by the end of the film. 
 
-                                                    With such inspirational life story, we were expecting a good movie which will remain in the memory for a longer time. We can still recall the magic of 'Chak de India'. And yes biopic can also be mesmerising like 'M.S Dhoni'.</p>
-											</li>
-
-											<li class="reviews__item">
-												<div class="reviews__autor">
-													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210705_181439__01 (1).jpg') }}" alt="">
-													<span class="reviews__name">Not so tight Execution</span>
-													<span class="reviews__time">24.08.2018, 17:53 by Sujal Patel</span>
-
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>4.0</span>
-												</div>
-												<p class="reviews__text">It's unbelievable that "Saina" comes from someone who made Taare Zameen Par. 
-
-                                                    Saina is old hindi bipoicy formulated movie which right intentions but not so tight execution. 
+                                                    I found his punishment of Cyrus Boothe, played by Ciff Curtis, in the sleeping pod / memory chamber- excessive. Bordering on NC-17 in its mean-spiritedness. We are then forced to trudge along with this character for another 20 minutes, as if we like him.
                                                     
-                                                    Unprofessional, unpromising, unsympathetic, uncharmismatic, unconditionally bad. Filled with non natural performances. 
+                                                    I'm not saying a film should always have a likeable protagonist, but to do so otherwise is to tread into dangerous territory.
                                                     
-                                                    Saina is like that cherry which looks glossy but tastes artificial.
+                                                    Rebecca Ferguson's character- Mae, is incalculable mysterious: Is she a killer? A thief?! A savior? Nick's friend?- or a druggie- strung out, emotionless, hapless, and thus ruthless; bound forever in Cyrus Boothe's death-finishing spiral...
                                                     
-                                                    There are two Malik's in this movie Meghna Malik and Armaan Malik. But Meghna Malik as Usha Rani Nehwal does a wonderful job and has single handedly upped the acting game in the movie. 
-                                                    Armaan Malik's music is in stark contrast to the other Malik. No feel, no retention. Yet bearable unlike "Tony Kakkad". 😅</p>
-											</li>
-
-											<li class="reviews__item">
-												<div class="reviews__autor">
-													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG-20200817-WA0006.jpg') }}" alt="">
-													<span class="reviews__name">🔥🔥🔥🔥🔥</span>
-													<span class="reviews__time">24.08.2018, 17:53 by Ujjwal Hendwe</span>
-
-													<span class="reviews__rating"><i class="icon ion-ios-star"></i>6.9</span>
-												</div>
-												<p class="reviews__text">To all the newcomers. These low ratings are from ssr department so dont bother. It's the best ever biopic whom everyone can relate.. Last song is an icing in the cake and shreya will definitely going to get dozens of awards for it.. Parineeti, manav, bharat, meghna, naisha, ankur, eshan all acted wonderfully.. Pari shows her versatility throughout the film as we see a change is sainas personality from an obese tomboy to a fit athletic champion.. Mark my words wether ppl like it Or not but this is the most original biopic ever made.... Kudos to everyone 
-                                                    And I personally feel this is the first biopic that is not everyones cup of tea.we criticize the crickets dominance ...in India and when a badminton legends biopic is out that is tooo great. Noone is interested I just wish India would collapse in cricket one day so badly that ppl would switch there intrest in other games❤</p>
+                                                    When Mae speaks to Nick Bannister through Cyrus, anticipating it in his own dream, it gives me a frightening realization that anyone who has the clairvoyance and presence of mind to do that would be an irreplaceable asset to any government </p>
 											</li>
 										</ul>
 
@@ -453,57 +387,40 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina1.jpeg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina1.jpeg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence1.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina2.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence2.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina3.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence3.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina4.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence4.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina5.jpg') }}" itemprop="thumbnail" alt="Image description" />
-										</a>
-										n 5</figcaption>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina6.jpg') }}" itemprop="thumbnail" alt="Image description" />
-										</a>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina7.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina7.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence5.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -511,8 +428,16 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence6.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence7.png') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence7.png') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -520,8 +445,17 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="{{ url_for('static', filename='img/gallery/Saina9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
-											<img src="{{ url_for('static', filename='img/gallery/Saina9.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Reminiscence9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Reminiscence9.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -547,19 +481,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
-									<a href="/chehre" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
+									<a href="/haseen" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="/chehre">Chehre</a></h3>
+									<h3 class="card__title"><a href="/haseen">Haseen Dillruba</a></h3>
 									<span class="card__category">
+										<a href="#">Crime</a>
 										<a href="#">Drama</a>
 										<a href="#">Mystery</a>
-										<a href="#">Thriller</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.7</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.9</span>
 								</div>
 							</div>
 						</div>
@@ -634,12 +568,12 @@
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
-									<a href="#" class="card__play">
+									<a href="/soorarai" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="#">Soorarai Pottru</a></h3>
+									<h3 class="card__title"><a href="/soorarai">Soorarai Pottru</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 									</span>
@@ -653,18 +587,19 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="{{ url_for('static', filename='img/covers/Bell bottom.jpg') }}" alt="">
-									<a href="/bell" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
+									<a href="/chehre" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="/bell">Bell Bottom</a></h3>
+									<h3 class="card__title"><a href="/chehre">Chehre</a></h3>
 									<span class="card__category">
-										<a href="#">Action</a>
+										<a href="#">Drama</a>
+										<a href="#">Mystery</a>
 										<a href="#">Thriller</a>
 									</span>
-									<span class="card__rate"><i class="icon ion-ios-star"></i>6.2</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.7</span>
 								</div>
 							</div>
 						</div>

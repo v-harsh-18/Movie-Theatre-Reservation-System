@@ -174,12 +174,14 @@
 						<!-- end availables -->
 
 						<!--Ticket-->
-						<div>
-							<form method="POST" action="/timings">
-								<input type="text" style="display: none;" value="Roohi" name="title">
-							<button type="submit" class="buy-tkt">Buy tickets</button>
-							</form>
-					    </div>
+						<form method="POST" action="/timings">
+							<div class="sign__group">
+								<input type="date" style="height: 3rem; font-size:1.15rem; width:13rem" class="sign__input buy-tkt" placeholder="Date" required name="date">
+							</div>
+							<div>
+									<input type="text" style="display: none;" value="Roohi" name="title">
+								<button type="submit" class="buy-tkt">Buy tickets</button>
+							</div>
 						<!--end Ticket-->
 
 						<!-- share -->

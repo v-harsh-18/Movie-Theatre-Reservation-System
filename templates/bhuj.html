@@ -86,7 +86,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="img/home/bhujhdbg.jpg"></div>
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/bhujhdbg.jpg') }}"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -105,7 +105,7 @@
 							<!-- card cover -->
 							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
 								<div class="card__cover">
-									<img src="img/covers/Bhuj.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Bhuj.jpg') }}" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
@@ -172,12 +172,15 @@
 							</ul>
 						</div>
 						<!-- end availables -->
-						<div>
-							<form method="POST" action="/timings">
-								<input type="text" style="display: none;" value="Bhuj" name="title">
-							<button type="submit" class="buy-tkt">Buy tickets</button>
-							</form>
-					    </div>
+						<form method="POST" action="/timings">
+							<div class="sign__group">
+								<input type="date" style="height: 3rem; font-size:1.15rem; width:13rem" class="sign__input buy-tkt" placeholder="Date" required name="date">
+							</div>
+							<div>
+									<input type="text" style="display: none;" value="Bhuj" name="title">
+								<button type="submit" class="buy-tkt">Buy tickets</button>
+							</div>
+						</form>
 						<!-- share -->
 						<div class="details__share">
 							<span class="details__share-title">Share with friends:</span>
@@ -260,7 +263,7 @@
 										<ul class="comments__list">
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Harsh Verma.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Harsh Verma.jpg') }}" alt="">
 													<span class="comments__name">Harsh Verma</span>
 													<span class="comments__time">02.08.2018, 15:24</span>
 												</div>
@@ -279,7 +282,7 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Aditya.jpeg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Aditya.jpeg') }}" alt="">
 													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
@@ -298,7 +301,7 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Gaurav.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Gaurav.jpg') }}" alt="">
 													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
@@ -335,7 +338,7 @@
 										<ul class="reviews__list">
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/instadp__maniratnnparakh01_full_size.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
 													<span class="reviews__name">FILM was WAY TOO AMBITIOUS IN ITS MAKING</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
@@ -350,7 +353,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG_20210622_194530_220.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
                                                     <span class="reviews__name">Fails to make any Impact</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
@@ -382,57 +385,40 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj1.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj1.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj1.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj2.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj2.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj2.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj3.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj3.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj3.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj4.webp" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj4.webp" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj4.webp') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj4.webp') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj5.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj5.jpg" itemprop="thumbnail" alt="Image description" />
-										</a>
-										n 5</figcaption>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj6.webp" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj6.webp" itemprop="thumbnail" alt="Image description" />
-										</a>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj7.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj7.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj5.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj5.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -440,8 +426,16 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj8.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj8.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj6.webp') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj6.webp') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj7.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj7.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -449,8 +443,17 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/Bhuj9.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/Bhuj9.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/Bhuj9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/Bhuj9.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -476,7 +479,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
 									<a href="/haseen" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -498,7 +501,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/ff9.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
 									<a href="/f9" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -520,7 +523,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/mimi.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
 									<a href="/mimi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -541,7 +544,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
 									<a href="/thailavi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -562,7 +565,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/sooraraipottru.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -582,7 +585,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/Chehre.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
 									<a href="/chehre" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
