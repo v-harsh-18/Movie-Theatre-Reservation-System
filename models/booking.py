@@ -19,7 +19,7 @@ app.secret_key = 'secret'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '5792'
-app.config['MYSQL_DB'] = 'faculty_assignment'
+app.config['MYSQL_DB'] = 'reservation'
 app.config['UPLOAD_FOLDER'] = 'static/files'
 
 app.secret_key = 'your secret key'
@@ -45,6 +45,9 @@ def login_is_required(function):
     return wrapper
 
 def timings():
+
+    if "google_id" not in session:
+            return redirect('/login')
 
     if request.method=='POST':
         title=request.form['title']
@@ -102,16 +105,14 @@ def timings():
         print(theatre)    
         return render_template('list.html',theatre=theatre, title=title)   
 
-    else:
-        dict={}
-        dict['hemlo']='ji'
-        print(dict)    
+  
 
     return render_template('list.html')    
 
 
 def booking():
-    login_is_required
+    if "google_id" not in session:
+            return redirect('/login')
 
     idshowing=request.form['idshowing']
     title=request.form['title']
@@ -137,6 +138,10 @@ def booking():
     return render_template('booking.html',seats=booked,title=title,idshowing=idshowing)   
 
 def booked():
+
+    if "google_id" not in session:
+            return redirect('/login')
+
     if request.method=='POST':
      seats=request.form.getlist('book')
 

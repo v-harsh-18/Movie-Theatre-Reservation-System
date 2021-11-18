@@ -122,7 +122,23 @@
 							<input type="text" style="display: none;" value="{{title}}" name="title">
 							<div class="card card--big">
 								<div class="card__cover">
+									{%if complex[0]=='PVR Indore'%}
 									<img src="{{ url_for('static', filename='img/home/pvr.png')}}" alt="">
+									{%elif complex[0]=='INOX C21'%}
+									<img src="{{ url_for('static', filename='img/home/Inox.jpg')}}" alt="">
+									{%elif complex[0]=='Carnival Cinemas'%}
+									<img src="{{ url_for('static', filename='img/home/Carnival.jpg')}}" alt="">
+									{%elif complex[0]=='Cinesquare Cinemas'%}
+									<img src="{{ url_for('static', filename='img/home/Cinesquare.jpg')}}" alt="">
+									{%elif complex[0]=='Aastha Talkies'%}
+									<img src="{{ url_for('static', filename='img/home/Aastha.jpg')}}" alt="">
+									{%elif complex[0]=='Kastur Talkies'%}
+									<img src="{{ url_for('static', filename='img/home/Kastur.jpg')}}" alt="">
+									{%elif complex[0]=='Madhu Milan Cinemas'%}
+									<img src="{{ url_for('static', filename='img/home/Madhu.webp')}}" alt="">
+									{%elif complex[0]=='Man Mandir'%}
+									<img src="{{ url_for('static', filename='img/home/Man.jpg')}}" alt="">
+									{% endif %}
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-arrow-dropdown-circle"></i>
 									</a>
@@ -135,17 +151,14 @@
 									<span class="card__rate"><i class="icon ion-ios-call"></i>{{complex[2]}}</span>
 									<div class="dropdown">
 										<label><span class="card__rate">Timings</span></label>  
-                                        <select name="idshowing">  
+                                        <select name="idshowing" class="sign__input" style="width:50%">  
 											{%for key,value in complex[5].items()%}
                                         <option value = "{{key}}"> {{value}}   
                                         </option>  
 										{%endfor%}
                                         </select>  
 									  </div>
-									  
-							<div class="sign__group">
-								<input type="date" class="sign__input" placeholder="Password">
-							</div>
+									
 							<button type="submit" class="buy-tkt">Buy tickets</button>
 							<!-- end card -->
 						</div>

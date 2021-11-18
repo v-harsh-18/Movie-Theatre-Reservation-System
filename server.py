@@ -41,7 +41,7 @@ os.environ['OAUTHLIB_RELAX_TOKEN_SCOPE'] = '1'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '5792'
-app.config['MYSQL_DB'] = 'faculty_assignment'
+app.config['MYSQL_DB'] = 'reservation'
 
 app.secret_key = 'your secret key'
  
