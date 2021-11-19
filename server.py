@@ -178,4 +178,5 @@ app.add_url_rule('/theoriginals', view_func=display.theoriginals, methods=['GET'
 app.add_url_rule('/tommorowwar', view_func=display.tommorowwar, methods=['GET']) 
 app.add_url_rule('/reminiscene', view_func=display.reminiscene, methods=['GET']) 
 
-app.run(debug=True)
+if __name__=="__main__":
+  app.run(debug=False,host='0.0.0.0')
