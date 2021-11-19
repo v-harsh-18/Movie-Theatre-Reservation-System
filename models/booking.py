@@ -30,8 +30,8 @@ app.config.update(
     MAIL_SERVER = 'smtp.gmail.com',
     MAIL_PORT = '465',
     MAIL_USE_SSL = True,
-    MAIL_USERNAME = 'notifyindia2021@gmail.com',
-    MAIL_PASSWORD=  'bleh_bleh'
+    MAIL_USERNAME = 'cineshow.india@gmail.com',
+    MAIL_PASSWORD=  '!Cineshow1'
 )
 mail = Mail(app)
 
@@ -118,6 +118,7 @@ def booking():
             return redirect('/login')
 
     idshowing=request.form['idshowing']
+    print(idshowing)
     title=request.form['title']
 
     query='''
