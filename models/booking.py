@@ -60,15 +60,13 @@ def timings():
         JOIN reservation.theatre_complex
         ON reservation.showing.theatre_id=reservation.theatre_complex.theatre_id
         WHERE reservation.showing.Movie_Title=%s AND reservation.showing.date_played=%s
-        ORDER BY reservation.theatre_complex.name;
+        ORDER BY reservation.theatre_complex.theatre_id;
         '''
 
         cursor = mysql.connection.cursor()
         cursor.execute(query,[title,date])
         input=cursor.fetchall()
         cursor.close()
-
-        print(input)
 
         theatre=()
         temp1=()
@@ -79,7 +77,7 @@ def timings():
         for i in range(0,length):
          if(i==0):
           temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
-          temp2={input[i][0]:input[i][4]}
+          temp2[input[i][0]]=input[i][4]
 
          elif(input[i][1]==temp1[0]):
             temp2[input[i][0]]=input[i][4]
@@ -87,22 +85,27 @@ def timings():
          else:
              if(tval==0):
               temp1+=(temp2,)
-              theatre=(temp1)
+              theatre+=(temp1,)
               tval=1
 
 
              else: 
               temp1+=(temp2,)
-              theatre=((theatre,)+(temp1,))
+              list1=list(theatre)
+              list1.append(temp1)
+              theatre=tuple(list1)
 
              temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
+             print(temp1)
              temp2={input[i][0]:input[i][4]}
 
 
-             temp1+=(temp2,)
-             theatre=((theatre,)+(temp1,))  
+        temp1+=(temp2,)
+        list1=list(theatre)
+        list1.append(temp1)
+        theatre=tuple(list1)
 
-        print(theatre)    
+        print(theatre)   
         return render_template('list.html',theatre=theatre, title=title)   
 
   
