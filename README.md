@@ -1,6 +1,6 @@
 # CineShow
 
-Cine Show is a one stop solution to all your movie and web series needs. Using CineShow users can book a ticket to their favorite movie ata theatre of their choice and also a seat of their choice. Adding icing to the cake, users acan also view various web shows from the comfort of their home just by subscribing to the various subscription plans offered. Also users can have a look at the trailer, ratings, reviews and stills from their favorite movie or web show. Google login is used for a seemless and easy to use attractive interface.
+Cine Show is a one-stop solution to all your movie and web series needs. Using CineShow, users can book a ticket to their favourite movie at a theatre of their choice and also a seat of their choice. Adding icing to the cake, users can also view various web shows from the comfort of their home just by subscribing to the different subscription plans offered. Also, users can look at the trailer, ratings, reviews and stills from their favourite movie or web show. Google login is used for a seamless and easy to use attractive interface.
 
 ## Tech Stack
 
@@ -30,7 +30,8 @@ Cine Show is a one stop solution to all your movie and web series needs. Using C
   
 ## Creators (Course project for CS207 Database and Information Systems)
 
-- [Harsh Verma](https://github.com/v-harsh-18)
-- [Aditya Deshmukh](https://github.com/adideshmukh104)
-- [Pranjali Gavhale](https://github.com/pranju141)
-- [Ujjwal Hendwe](https://github.com/ujjwalhendwe)
+- [Harsh Verma, ee200002038](https://github.com/v-harsh-18)
+- [Aditya Deshmukh, cse200001019](https://github.com/adideshmukh104)
+- [Pranjali Gavhale, cse200001024](https://github.com/pranju141)
+- [Ujjwal Hendwe, cse200001028](https://github.com/ujjwalhendwe)
+
