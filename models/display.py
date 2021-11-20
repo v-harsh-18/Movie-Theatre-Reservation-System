@@ -157,7 +157,10 @@ def fourmoreshots():
     return render_template('fourmoreshots.html')      
 
 def scam():
-    return render_template('scam.html')  
+    return render_template('scam.html') 
 
+def tommorowwar():
+    return render_template('tommorowwar.html')
 
-
+def reminiscene():
+    return render_template('reminiscene.html')

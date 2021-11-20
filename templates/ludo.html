@@ -140,22 +140,16 @@
 				<!-- end content -->
 
 				<!-- player -->
+				
 				<div class="col-12 col-xl-6">
-					<video controls crossorigin playsinline poster="../../../cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-						<!-- Video files -->
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
-
-						<!-- Caption files -->
-						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-						    default>
-						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
-
-						<!-- Fallback for browsers that don't support the <video> element -->
-						<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
-					</video>
+					<div class="plyr__video-embed" id="player">
+						<iframe
+						  src="https://www.youtube.com/embed/ZT9Gihrxa4Q?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+						  allowfullscreen
+						  allowtransparency
+						  allow="autoplay"
+						></iframe>
+					  </div>
 				</div>
 				<!-- end player -->
 
@@ -172,12 +166,14 @@
 							</ul>
 						</div>
 						<!-- end availables -->
-						<div>
-							<form method="POST" action="/timings">
-								<input type="text" style="display: none;" value="Ludo" name="title">
-							<button type="submit" class="buy-tkt">Buy tickets</button>
-							</form>
-					    </div>
+						<form method="POST" action="/timings">
+							<div class="sign__group">
+								<input type="date" style="height: 3rem; font-size:1.15rem; width:13rem" class="sign__input buy-tkt" placeholder="Date" required name="date">
+							</div>
+							<div>
+									<input type="text" style="display: none;" value="Ludo" name="title">
+								<button type="submit" class="buy-tkt">Buy tickets</button>
+							</div>
 						<!-- share -->
 						<div class="details__share">
 							<span class="details__share-title">Share with friends:</span>
@@ -476,12 +472,12 @@ Anurag Basu is back again with his forte of portraying the characters in the mos
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
-									<a href="Haseen.html" class="card__play">
+									<a href="/haseen" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+									<h3 class="card__title"><a href="/haseen">Haseen Dillruba</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
@@ -498,12 +494,12 @@ Anurag Basu is back again with his forte of portraying the characters in the mos
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
-									<a href="F9.html" class="card__play">
+									<a href="/f9" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="F9.html">Fast and Furious 9</a></h3>
+									<h3 class="card__title"><a href="/f9">Fast and Furious 9</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 									    <a href="#">Adventure</a>
@@ -520,12 +516,12 @@ Anurag Basu is back again with his forte of portraying the characters in the mos
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
-									<a href="mimi.html" class="card__play">
+									<a href="/mimi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+									<h3 class="card__title"><a href="/mimi">Mimi</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 									    <a href="#">Drama</a>
@@ -541,12 +537,12 @@ Anurag Basu is back again with his forte of portraying the characters in the mos
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
-									<a href="Thailavi.html" class="card__play">
+									<a href="/thailavi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Thailavi.html">Thalaivi-</a></h3>
+									<h3 class="card__title"><a href="/thailavi">Thalaivi-</a></h3>
 									<span class="card__category">
 										<a href="#">Biography</a>
 										<a href="#">Drama</a>
@@ -582,12 +578,12 @@ Anurag Basu is back again with his forte of portraying the characters in the mos
 							<div class="card">
 								<div class="card__cover">
 									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
-									<a href="Chehre.html" class="card__play">
+									<a href="/chehre" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
+									<h3 class="card__title"><a href="/chehre">Chehre</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 										<a href="#">Mystery</a>

@@ -41,7 +41,7 @@ os.environ['OAUTHLIB_RELAX_TOKEN_SCOPE'] = '1'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '5792'
-app.config['MYSQL_DB'] = 'faculty_assignment'
+app.config['MYSQL_DB'] = 'reservation'
 
 app.secret_key = 'your secret key'
  
@@ -137,7 +137,7 @@ app.add_url_rule('/pricing', view_func=display.pricing, methods=['GET'])
 app.add_url_rule('/faq', view_func=display.faq, methods=['GET'])
 app.add_url_rule('/about', view_func=display.about, methods=['GET'])
 app.add_url_rule('/details2', view_func=display.details2, methods=['GET'])
-app.add_url_rule('/booking', view_func=booking.booking, methods=['GET'])
+app.add_url_rule('/booking', view_func=booking.booking, methods=['POST'])
 app.add_url_rule('/f9', view_func=display.f9, methods=['GET'])
 app.add_url_rule('/bell', view_func=display.bell, methods=['GET'])
 app.add_url_rule('/bhuj', view_func=display.bhuj, methods=['GET'])
@@ -162,7 +162,7 @@ app.add_url_rule('/soorarai', view_func=display.soorarai, methods=['GET'])
 app.add_url_rule('/thailavi', view_func=display.thailavi, methods=['GET'])
 app.add_url_rule('/confirmation', view_func=display.confirmation, methods=['GET']) 
 app.add_url_rule('/book', view_func=booking.booked, methods=['POST'])
-app.add_url_rule('/timings', view_func=booking.timings, methods=['POST'])
+app.add_url_rule('/timings', view_func=booking.timings, methods=['POST','GET'])
 app.add_url_rule('/dark', view_func=display.dark, methods=['GET']) 
 app.add_url_rule('/familyman', view_func=display.familyman, methods=['GET']) 
 app.add_url_rule('/fourmoreshots', view_func=display.fourmoreshots, methods=['GET']) 
@@ -175,5 +175,8 @@ app.add_url_rule('/sacredgames', view_func=display.sacredgames, methods=['GET'])
 app.add_url_rule('/scam', view_func=display.scam, methods=['GET']) 
 app.add_url_rule('/squidgames', view_func=display.squidgames, methods=['GET']) 
 app.add_url_rule('/theoriginals', view_func=display.theoriginals, methods=['GET']) 
+app.add_url_rule('/tommorowwar', view_func=display.tommorowwar, methods=['GET']) 
+app.add_url_rule('/reminiscene', view_func=display.reminiscene, methods=['GET']) 
 
-app.run(debug=True)
+if __name__=="__main__":
+  app.run(debug=True)

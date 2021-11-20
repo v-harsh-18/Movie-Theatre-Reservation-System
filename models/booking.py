@@ -9,8 +9,6 @@ import os
 import requests
 import pathlib
 from werkzeug.utils import secure_filename, send_file
-import models.display as display
-import models.booking as bookin
 from flask_mail import *
 import datetime
 import math
@@ -21,7 +19,7 @@ app.secret_key = 'secret'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '5792'
-app.config['MYSQL_DB'] = 'faculty_assignment'
+app.config['MYSQL_DB'] = 'reservation'
 app.config['UPLOAD_FOLDER'] = 'static/files'
 
 app.secret_key = 'your secret key'
@@ -32,8 +30,8 @@ app.config.update(
     MAIL_SERVER = 'smtp.gmail.com',
     MAIL_PORT = '465',
     MAIL_USE_SSL = True,
-    MAIL_USERNAME = 'notifyindia2021@gmail.com',
-    MAIL_PASSWORD=  'bleh_bleh'
+    MAIL_USERNAME = 'cineshow.india@gmail.com',
+    MAIL_PASSWORD=  '!Cineshow1'
 )
 mail = Mail(app)
 
@@ -48,18 +46,80 @@ def login_is_required(function):
 
 def timings():
 
+    if "google_id" not in session:
+            return redirect('/login')
+
     if request.method=='POST':
         title=request.form['title']
-        print(title)
+        date=request.form['date']
+        print(date)
 
-    return redirect('/booking')    
+        query='''
+        SELECT reservation.showing.idShowing, reservation.theatre_complex.name, reservation.theatre_complex.address, reservation.theatre_complex.phone_number,reservation.showing.start_time,showing.date_played,reservation.showing.theatre_id,reservation.showing.Theatre_screen_id
+        FROM reservation.showing
+        JOIN reservation.theatre_complex
+        ON reservation.showing.theatre_id=reservation.theatre_complex.theatre_id
+        WHERE reservation.showing.Movie_Title=%s AND reservation.showing.date_played=%s
+        ORDER BY reservation.theatre_complex.theatre_id;
+        '''
+
+        cursor = mysql.connection.cursor()
+        cursor.execute(query,[title,date])
+        input=cursor.fetchall()
+        cursor.close()
+
+        theatre=()
+        temp1=()
+        temp2={}
+        tval=0
+        length=len(input)
+
+        for i in range(0,length):
+         if(i==0):
+          temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
+          temp2[input[i][0]]=input[i][4]
+
+         elif(input[i][1]==temp1[0]):
+            temp2[input[i][0]]=input[i][4]
+
+         else:
+             if(tval==0):
+              temp1+=(temp2,)
+              theatre+=(temp1,)
+              tval=1
+
+
+             else: 
+              temp1+=(temp2,)
+              list1=list(theatre)
+              list1.append(temp1)
+              theatre=tuple(list1)
+
+             temp1=(input[i][1],input[i][2],input[i][3],input[i][6],input[i][7])
+             print(temp1)
+             temp2={input[i][0]:input[i][4]}
+
+
+        temp1+=(temp2,)
+        list1=list(theatre)
+        list1.append(temp1)
+        theatre=tuple(list1)
+
+        print(theatre)   
+        return render_template('list.html',theatre=theatre, title=title)   
+
+  
+
+    return render_template('list.html')    
 
 
 def booking():
-    login_is_required
+    if "google_id" not in session:
+            return redirect('/login')
 
-    idshowing='Mimi0001121110513'
-    title='Mimi'
+    idshowing=request.form['idshowing']
+    print(idshowing)
+    title=request.form['title']
 
     query='''
     SELECT seat 
@@ -82,6 +142,10 @@ def booking():
     return render_template('booking.html',seats=booked,title=title,idshowing=idshowing)   
 
 def booked():
+
+    if "google_id" not in session:
+            return redirect('/login')
+
     if request.method=='POST':
      seats=request.form.getlist('book')
 

@@ -86,7 +86,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="img/home/f9hdbg.jpg"></div>
+		<div class="details__bg" data-bg="{{ url_for('static', filename='img/home/f9hdbg.jpg') }}"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -105,7 +105,7 @@
 							<!-- card cover -->
 							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
 								<div class="card__cover">
-									<img src="img/covers/ff9.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/ff9.jpg') }}" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
@@ -141,22 +141,16 @@
 				<!-- end content -->
 
 				<!-- player -->
+				
 				<div class="col-12 col-xl-6">
-					<video controls crossorigin playsinline poster="../../../cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-						<!-- Video files -->
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
-
-						<!-- Caption files -->
-						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-						    default>
-						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
-
-						<!-- Fallback for browsers that don't support the <video> element -->
-						<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
-					</video>
+					<div class="plyr__video-embed" id="player">
+						<iframe
+						  src="https://www.youtube.com/embed/aSiDu3Ywi8E?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+						  allowfullscreen
+						  allowtransparency
+						  allow="autoplay"
+						></iframe>
+					  </div>
 				</div>
 				<!-- end player -->
 
@@ -173,12 +167,15 @@
 							</ul>
 						</div>
 						<!-- end availables -->
-					    <div>
-							<form method="POST" action="/timings">
-								<input type="text" style="display: none;" value="Fast and Furious 9" name="title">
-							<button type="submit" class="buy-tkt">Buy tickets</button>
-							</form>
-					    </div>
+					    <form method="POST" action="/timings">
+							<div class="sign__group">
+								<input type="date" style="height: 3rem; font-size:1.15rem; width:13rem" class="sign__input buy-tkt" placeholder="Date" required name="date">
+							</div>
+							<div>
+									<input type="text" style="display: none;" value="Fast and Furious 9" name="title">
+								<button type="submit" class="buy-tkt">Buy tickets</button>
+							</div>
+						</form>
 						<!-- share -->
 						<div class="details__share">
 							<span class="details__share-title">Share with friends:</span>
@@ -261,7 +258,7 @@
 										<ul class="comments__list">
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Harsh Verma.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Harsh Verma.jpg') }}" alt="">
 													<span class="comments__name">Harsh Verma</span>
 													<span class="comments__time">02.08.2018, 15:24</span>
 												</div>
@@ -280,7 +277,7 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Pranjali.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Pranjali.jpg') }}" alt="">
 													<span class="comments__name">Pranjali Ghavale</span>
 													<span class="comments__time">30.08.2018, 17:53</span>
 												</div>
@@ -299,7 +296,7 @@
 
 											<li class="comments__item comments__item--answer">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Chaitanya.jpeg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Chaitanya.jpeg') }}" alt="">
 													<span class="comments__name">Chaitanya Dhanorkar</span>
 													<span class="comments__time">24.08.2018, 16:41</span>
 												</div>
@@ -318,7 +315,7 @@
 
 											<li class="comments__item comments__item--quote">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Aditya.jpeg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Aditya.jpeg') }}" alt="">
 													<span class="comments__name">Aditya Deshmukh</span>
 													<span class="comments__time">11.08.2018, 11:11</span>
 												</div>
@@ -337,7 +334,7 @@
 
 											<li class="comments__item">
 												<div class="comments__autor">
-													<img class="comments__avatar" src="img/Gaurav.jpg" alt="">
+													<img class="comments__avatar" src="{{ url_for('static', filename='img/Gaurav.jpg') }}" alt="">
 													<span class="comments__name">Gaurav Gill</span>
 													<span class="comments__time">07.08.2018, 14:33</span>
 												</div>
@@ -374,7 +371,7 @@
 										<ul class="reviews__list">
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/instadp__maniratnnparakh01_full_size.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/instadp__maniratnnparakh01_full_size.jpg') }}" alt="">
 													<span class="reviews__name">Best Movie in my opinion</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Maniratnn Parakh</span>
 
@@ -385,7 +382,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG_20210622_194530_220.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210622_194530_220.jpg') }}" alt="">
 													<span style="color : red;" class="reviews__name">Warning: Spoilers</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Pranjali Ghavale</span>
 
@@ -402,7 +399,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG_20210705_181439__01 (1).jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG_20210705_181439__01 (1).jpg') }}" alt="">
 													<span class="reviews__name">Movie is overrated in my opinion</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Sujal Patel</span>
 
@@ -417,7 +414,7 @@
 
 											<li class="reviews__item">
 												<div class="reviews__autor">
-													<img class="reviews__avatar" src="img/IMG-20200817-WA0006.jpg" alt="">
+													<img class="reviews__avatar" src="{{ url_for('static', filename='img/IMG-20200817-WA0006.jpg') }}" alt="">
 													<span class="reviews__name">They have maintained their legacy</span>
 													<span class="reviews__time">24.08.2018, 17:53 by Ujjwal Hendwe</span>
 
@@ -448,57 +445,40 @@
 								<div class="row">
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic1.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic1.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic1.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic2.webp" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic2.webp" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic2.webp') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic2.webp') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic3.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic3.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic3.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic4.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic4.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic4.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 									</figure>
 									<!-- end gallery item -->
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic13.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic13.jpg" itemprop="thumbnail" alt="Image description" />
-										</a>
-										n 5</figcaption>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic6.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic6.jpg" itemprop="thumbnail" alt="Image description" />
-										</a>
-									</figure>
-									<!-- end gallery item -->
-
-									<!-- gallery item -->
-									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic7.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic7.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic13.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic13.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -506,8 +486,16 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic8.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic8.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic6.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic6.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/pic7.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic7.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -515,8 +503,17 @@
 
 									<!-- gallery item -->
 									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
-										<a href="img/gallery/pic9.jpg" itemprop="contentUrl" data-size="1920x1280">
-											<img src="img/gallery/pic9.jpg" itemprop="thumbnail" alt="Image description" />
+										<a href="{{ url_for('static', filename='img/gallery/pic8.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic8.jpg') }}" itemprop="thumbnail" alt="Image description" />
+										</a>
+										n 5</figcaption>
+									</figure>
+									<!-- end gallery item -->
+
+									<!-- gallery item -->
+									<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+										<a href="{{ url_for('static', filename='img/gallery/pic9.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+											<img src="{{ url_for('static', filename='img/gallery/pic9.jpg') }}" itemprop="thumbnail" alt="Image description" />
 										</a>
 										n 5</figcaption>
 									</figure>
@@ -542,13 +539,13 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/Chehre.jpg" alt="">
-									<a href="Chehre.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Chehre.jpg') }}" alt="">
+									<a href="/chehre" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Chehre.html">Chehre</a></h3>
+									<h3 class="card__title"><a href="/chehre">Chehre</a></h3>
 									<span class="card__category">
 										<a href="#">Drama</a>
 										<a href="#">Mystery</a>
@@ -564,13 +561,13 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/mimi.jpg" alt="">
-									<a href="mimi.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/mimi.jpg') }}" alt="">
+									<a href="/mimi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="mimi.html">Mimi</a></h3>
+									<h3 class="card__title"><a href="/mimi">Mimi</a></h3>
 									<span class="card__category">
 										<a href="#">Comedy</a>
 									    <a href="#">Drama</a>
@@ -585,13 +582,13 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
-									<a href="Thailavi.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/cover3.jpg') }}" alt="">
+									<a href="/thailavi" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Thailavi.html">Thalaivi-</a></h3>
+									<h3 class="card__title"><a href="/thailavi">Thalaivi-</a></h3>
 									<span class="card__category">
 										<a href="#">Biography</a>
 										<a href="#">Drama</a>
@@ -606,13 +603,13 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
-									<a href="Haseen.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/cover4.jpg') }}" alt="">
+									<a href="/haseen" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Haseen.html">Haseen Dillruba</a></h3>
+									<h3 class="card__title"><a href="/haseen">Haseen Dillruba</a></h3>
 									<span class="card__category">
 										<a href="#">Crime</a>
 										<a href="#">Drama</a>
@@ -628,7 +625,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/sooraraipottru.jpg" alt="">
+									<img src="{{ url_for('static', filename='img/covers/sooraraipottru.jpg') }}" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -648,13 +645,13 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/Bell bottom.jpg" alt="">
-									<a href="Bell.html" class="card__play">
+									<img src="{{ url_for('static', filename='img/covers/Bell bottom.jpg') }}" alt="">
+									<a href="/bell" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
 								</div>
 								<div class="card__content">
-									<h3 class="card__title"><a href="Bell.html">Bell Bottom</a></h3>
+									<h3 class="card__title"><a href="/bell">Bell Bottom</a></h3>
 									<span class="card__category">
 										<a href="#">Action</a>
 										<a href="#">Thriller</a>
